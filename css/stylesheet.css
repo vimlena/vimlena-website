@@ -151,11 +151,6 @@ p {
 img {
     max-width: 100%;
 }
-article img,
-main img,
-figure img {
-    cursor: pointer;
-}
 figure {
     background-color: var(--background-01);
     border-radius: 0.625rem;
