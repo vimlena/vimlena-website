@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="dark light">
+        <!-- title & properties -->
+        <title>Making A Blog In 2025 / Anthophorism</title>
+        <meta property="og:title" content="Making A Blog In 2025 / Anthophorism">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://vimlena.com/posts/2025/08/making-a-blog-in-2025.html">
+        <meta property="og:description" content="Intent, code, and design behind Anthophorism.">
+        <meta name="description" content="Intent, code, and design behind Anthophorism.">
+        <meta property="og:image" content="https://vimlena.com/img/2025/08/typefaces.jpg">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../../img/favicon/site.webmanifest">
+        <!-- css -->
+        <link href="../../../css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../../../css/making-a-blog-in-2025-custom.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../../../index.html">
+                            <img id="nav-home-icon" src="https://vimlena.com/img/icons/home-light.svg" alt="Home icon" height="20" width="20">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../posts.html">
+                            <img id="nav-posts-icon" src="https://vimlena.com/img/icons/document-light.svg" alt="Document icon" height="20" width="20">
+                            Posts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../about.html">
+                            <img id="nav-about-icon" src="https://vimlena.com/img/icons/user-light.svg" alt="User icon" height="20" width="20">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1>Making A Blog In 2025</h1>
+            <address rel="author">Vim Lena</address>
+            <time datetime="2025-08-13">August 13, 2025</time>
+            <p>
+                This post is going to be about my own motivations for making a blog/website not tied to social media or medium/substack/wordpress/what have you and the rationale for some of the technical decisions I made while developing it. The first part is more generally focused but the latter half is probably just going to be talking about web design so it may not be for everyone.
+            </p>
+            <h2>Against the Closed &amp; Convenient Web</h2>
+            <p>
+                It’s probably never been easier than it is now to post (for better or worse). Between conventional social media, micro-blogging, long-form writing sites and blogs, Forum-adjacent sites, and platforms that obscure the difference between social media and messaging, you have a wide variety of formats and options available. There’s also been increase in non-technical website creation services the past decade that allow users to drag and drop sections onto a page or choose from customizable templates, no coding expertise required. This is all a pretty remarkable change of pace from how the internet was in the days of Bulletin Board Systems (BBS), Internet Relay Chat (IRC), and Web 1.0 sites. It would seem almost backwards to make a read-only independent website considering how utilizing already-existing is generally pretty easy and free or cheap.
+            </p>
+            <p>
+                Cory Doctorow, prolific sci-fi author, journalist, blogger, and general internet guy, coined a term to talk about platforms and their tendency to plateau and die out over time <a href="https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys">called “enshittification”</a>. When a new platform starts out, it offers features to attract and become valuable or useful to new consumers/users as well as sellers/creators. Things are pretty good initially but the platform inevitably enters a 3 way tug-of-war between the priorities of shareholders, sellers/creators, and consumers/users. The shareholders eventually win and the platform turns against the sellers/creators and consumers/users. Despite the platform no longer serving anybody but the shareholders, people continue to utilize it because it is established and the cost of leaving outweighs the cost of staying. People may either begin to leave for a different platform that has sprung up also offering attractive/valuable features and the cycle repeats or it becomes impossible to avoid and everybody utilizes it at least sometimes for lack of better options (Facebook is an example of the former and Amazon and Google is are examples of the latter). This all happens because, at the end of the day, internet platforms are owned and run by businesses.
+            </p>
+            <p>
+                Another downside to many internet platforms is how closed off or exclusive they are, an environment known as a <a href="https://en.wikipedia.org/wiki/Closed_platform">“walled garden.”</a> The businesses that run internet platforms want to keep you within their app or website as much as possible because that’s how they can make the most money or gather the most valuable information from you. In example, think of how clicking a link while using a mobile app opens an in-app browser so that you can easily go back to scrolling once you finish reading, the way you can’t download software on an iPhone anywhere but the App Store (without modifying the device), You don’t have to create an account to view my website, you don’t have to pay for a membership or a fee to get in, it’s entirely open.
+            </p>
+            <p>
+                With regards to website creation service, there’s some level of sacrificing options for convenience that I am not a fan of. While something like Squarespace may be useful for somebody who’s not technically inclined, and it’s probably good that something like that exists, I enjoy having the flexibility of being able to tweak everything just how I like it. Also the code those services generate is really ugly.
+            </p>
+            <p>
+                So yeah, I wanted to make a website that would be my own that anybody could access. It isn’t dependent on a platform, doesn’t bug people to make an account or get a membership, and it’s easy to maintain. If, for some reason, this domain dies or something happens to a service I use then I have all of the underlying code on my computer and can simply re-upload it somewhere else without issue.
+            </p>
+            <h2>Design &amp; Coding</h2>
+            <p>
+                I didn’t have an extremely solid idea exactly what I wanted to do with this website before I started making it. I have always been sort of a computer nerd and would do things like bringing my laptop to school with me so that I could make little silly programs and tweak my Linux install rather than doing schoolwork. Before I had a computer to myself and access to the internet, I would spend hours adjusting different settings on my family’s Windows 95 (and later XP) install. Messing around with a technology and seeing what happens is part of the fun for me, I think being too deterministic about design or even purpose can get in the way of exploration and play leads to new ideas and approaches.
+            </p>
+            <p>
+                Anyway, I started this website on a whim as a free <a href="https://neocities.org">NeoCities</a> account. I liked NeoCities so much I became a supporter for $5/month because that gives you including the ability to use a custom domain and much more storage space. This isn’t sponsored by NeoCities, I just genuinely think it’s a great service. Anyway, I set up my own domain and linked it to my NeoCities account then kept working on the site. From the start, I intended to make it this website simple, accessible, and fast.
+            </p>
+            <h3>Writing Posts</h3>
+            <p>
+                Write out all of my posts using the popular format <a href="https://www.markdownguide.org/basic-syntax/">Markdown</a> which you may be familiar with if you’ve ever used Discord or Reddit. It’s much faster than manually coding HTML and lets you focus on the writing aspect without having to fire up a word processor. I write out the posts using the <a href="https://www.sublimetext.com/">Sublime Text</a> editor because it’s very easy to use, looks great, and loads fast. I’ve tried a bunch of different text editors and IDEs throughout the years and Sublime is probably my favorite for quick edits and small projects next to <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a> (from which I got my name).
+            </p>
+            <figure>
+                <img src="../../../img/2025/08/writing-posts-markdown.jpg" alt="A screenshot of what the Markdown text for the last paragraph looks like in the Sublime Text editor. The text looks simple, like a basic plain text email." title="A screenshot of what the Markdown text for the last paragraph looks like in the Sublime Text editor. The text looks simple, like a basic plain text email." onclick="window.open(this.src, '_blank');">
+                <img src="../../../img/2025/08/writing-posts-html.jpg" alt="A screenshot of what the HTML code for the last paragraph looks like in the Sublime Text editor. The code looks more complicated than the previous image’s text and contains more technical markup." title="A screenshot of what the HTML code for the last paragraph looks like in the Sublime Text editor. The code looks more complicated than the previous image’s text and contains more technical markup." onclick="window.open(this.src, '_blank');">
+                <figcaption>
+                    A comparison of how the last paragraph’s text looks when written in Markdown (first image) and then rendered in HTML (second image) when viewed in the Sublime Text editor with the Marina color scheme. Note how much simpler to write and read Markdown is. John Gruber, the creator of Markdown, said that <a href="https://daringfireball.net/projects/markdown/">the biggest inspiration for it’s formatting is a simple plain-text email</a>.
+                </figcaption>
+            </figure>
+            <p>
+                To convert my plain text markdown files into usable HTML, I use <a href="https://pandoc.org/">Pandoc</a> which is a simple terminal-based program that converts document formats into other document formats. Pandoc has a ton of really useful features and it’s probably one of my favorite utilities I’ve ever used. Once I have a HTML file, I copy/paste the HTML onto a blank webpage template I built for the website and it’s good to go live after I check that everything rendered right.
+            </p>
+            <h3>Colors, Contrast, &amp; Icons</h3>
+            <p>
+                I tried my best to balance visually pleasing/pleasant colors that were still accessible. I pulled the colors I used for the default dark theme from <a href="https://github.com/chriskempson/base16-default-schemes/tree/master">Chris Kempson’s base16 colorschemes</a>, specifically one I really like called “ocean” which has good contrast and a cool background color. I defaulted to this theme because I personally prefer dark themes with light text. Next, I workshopped a few different light themes but decided to use <a href="https://github.com/vallyscode/cloud-vscode-theme/tree/main">Valerii Lysenko’s “cloud” color scheme designed for VS Code</a> because thought it looked nice with decent contrast and good colors. I tried implementing a theme switcher GUI but decided it would just be easier to detect whether the user has a preference based on the device they’re viewing utilizing the <code>prefers-color-scheme</code> CSS media feature (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">read about that here</a>).
+            </p>
+            <figure>
+                <img src="../../../img/2025/08/color-scheme-base16-ocean.jpg" alt="A small section of code highlighted in the dark base 16 ocean color scheme. It is a color scheme with a dark gray/blue background and moderately pigmented, cooler colors with a fair amount of contrast." title="A small section of code highlighted in the dark base 16 ocean color scheme. It is a color scheme with a dark gray/blue background and moderately pigmented, cooler colors with a fair amount of contrast." onclick="window.open(this.src, '_blank');">
+                <img src="../../../img/2025/08/color-scheme-cloud.jpg" alt="A small section of code highlighted in the light cloud color scheme. It is a color scheme with an off-white background and moderately pigmented, agreeable colors with a fair amount of contrast." title="A small section of code highlighted in the light cloud color scheme. It is a color scheme with an off-white background and moderately pigmented, agreeable colors with a fair amount of contrast." onclick="window.open(this.src, '_blank');">
+                <figcaption>
+                    Some small sections of code using the <a href="https://github.com/chriskempson/base16-default-schemes/tree/master">base 16 ocean dark color scheme</a> and the <a href="https://github.com/vallyscode/cloud-vscode-theme/tree/main">cloud light color scheme</a> supplied by their creators Chris Kempson and Valerii Lysenko respectively. They both utilize what, in my opinion, is a very pleasant, inviting color palette with enough contrast that they are usable without being grating to look at.
+                </figcaption>
+            </figure>
+            <p>
+                I decided to use the <a href="https://github.com/shimmerproject/elementary-xfce/tree/master">“elementary-xfce” icons by The Shimmer Project</a> which was a personal favorite SVG icon set utilized by my standby Linux distro <a href="https://xubuntu.org/">xubuntu</a>. I modified the colors of the files to correspond with the webpage text colors and made CSS change the icons set based on whether the user had a preference for light or dark mode. The CSS ID selectors of <code>#nav-home-icon</code>, <code>#nav-posts-icon</code>, and <code>#nav-about-icon</code> are used to target the <code>&lt;img&gt;</code> elements in the navigation bar. My reasoning for using this icon theme was basically just that I liked how it used SVG files that wouldn’t pixelate and I liked the simplicity in their design. I’ve long been a big fan of the <a href="https://elementary.io/">elementary OS</a> and have inspired by its design and brand.
+            </p>
+            <figure>
+                <img src="../../../img/2025/08/elementary-xfce-apps.jpg" alt="A screenshot of various app icons for the elementary-xfce icon theme by The Shimmer Project including media viewers, office suites, image editors, and other common computer utilities. The icons use a visually pleasant color palette and tread the boundary between being flat or without detail and attention-grabbing or skeumorphic (or mimicking the appearence of real-world things)." title="A screenshot of various app icons for the elementary-xfce icon theme by The Shimmer Project including media viewers, office suites, image editors, and other common computer utilities. The icons use a visually pleasant color palette and tread the boundary between being flat or without detail and attention-grabbing or skeumorphic (or mimicking the appearence of real-world things)." onclick="window.open(this.src, '_blank');">
+                <img src="../../../img/2025/08/elementary-xfce-symbolic.jpg" alt="A screenshot of various device symbolic icons for the elementary-xfce icon theme by The Shimmer Project including cameras, printers, phones, and common computer accessories like mice, headsets, and hard drives. The icons are a monochromatic dark gray and are easy to understand with bold lines and simple construction." title="A screenshot of various device symbolic icons for the elementary-xfce icon theme by The Shimmer Project including cameras, printers, phones, and common computer accessories like mice, headsets, and hard drives. The icons are a monochromatic dark gray and are easy to understand with bold lines and simple construction." onclick="window.open(this.src, '_blank');">
+                <figcaption>
+                    A selection of full-color app icons and monochromatic symbolic device icons in the <a href="https://github.com/shimmerproject/elementary-xfce/tree/master">elementary-xfce icon theme by The Shimmer Project</a>. The elementary-xfce icon theme is simple but not without character or dimension which make it great for effective and efficient communication. If you want to know more about the design of elementary OS, from which this icon theme is derived from, check out their <a href="https://docs.elementary.io/hig/reference/iconography">Human Interface Guidelines</a>. Using the <a href="https://elementary.io/">elementary OS Linux distribution</a> and their <a href="https://github.com/elementary/icons">icon theme</a> is part of how I got interested in design.
+                </figcaption>
+            </figure>
+            <p>
+                Next, I modified the color values to comply strictly with high contrast accessibility standards and made a new set of themes to be separately used if the user has the <code>prefers-contrast</code> CSS media feature; if the user had the value set to <code>more</code> on loading the page, it called the high contrast variant of the theme, but if the user’s value was set to <code>less</code>, <code>no-preference</code>, or <code>custom</code> (which indicates forced colors by the device), then it would either give the default color scheme or allow the forced colors to be used.
+            </p>
+            <p>
+                I initially used a lot of JavaScript when trying to sort out the colors/contrast/icons but I didn’t like the delay that caused in the site rendering, so I shifted towards utilizing as much CSS as I could by default and only leaning into JavaScript when I needed to. In the end. I used the fact that you can define variables in CSS and call them to create a template of background colors, text colors, and assorted other colors for colorful text like links or code blocks. For this code snippet, I’ve filled in the background of the hex value with the color it renders as so you can get an idea of the color palette. At the time of writing, this is the CSS I use (<a href="https://github.com/vimlena/vimlena-website/blob/main/css/stylesheet.css">GitHub link</a>):
+            </p>
+            <div class="sourceCode" id="cb2"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">prefers-color-scheme</span><span class="ch">:</span> <span class="dv">dark</span><span class="fu">)</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    body {</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">--background-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-01">#2b303b</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">--background-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-02">#343d46</span><span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">--background-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-03">#4f5b66</span><span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-04">#a7adba</span><span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-05">#c0c5ce</span><span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-06">#dfe1e8</span><span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-04</span><span class="ch">:</span> <span class="cn" id="color-swatch-07">#eff1f5</span><span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="va">--red</span><span class="ch">:</span> <span class="cn" id="color-swatch-08">#bf616a</span><span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">--orange</span><span class="ch">:</span> <span class="cn" id="color-swatch-09">#d08770</span><span class="op">;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">--yellow</span><span class="ch">:</span> <span class="cn" id="color-swatch-10">#ebcb8b</span><span class="op">;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">--green</span><span class="ch">:</span> <span class="cn" id="color-swatch-11">#a3be8c</span><span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="va">--blue-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-12">#96b5b4</span><span class="op">;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="va">--blue-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-13">#8fa1b3</span><span class="op">;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="va">--purple</span><span class="ch">:</span> <span class="cn" id="color-swatch-14">#b48ead</span><span class="op">;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="va">--brown</span><span class="ch">:</span> <span class="cn" id="color-swatch-15">#ab7967</span><span class="op">;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#nav-home-icon</span> {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">content</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">&quot;https://vimlena.com/img/icons/home-light.svg&quot;</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#nav-posts-icon</span> {</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="kw">content</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">&quot;https://vimlena.com/img/icons/document-light.svg&quot;</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#nav-about-icon</span> {</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>        <span class="kw">content</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">&quot;https://vimlena.com/img/icons/user-light.svg&quot;</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">prefers-color-scheme</span><span class="ch">:</span> <span class="dv">light</span><span class="fu">)</span> {</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    body {</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>        <span class="va">--background-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-16">#ffffff</span><span class="op">;</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>        <span class="va">--background-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-17">#f1f1f1</span><span class="op">;</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>        <span class="va">--background-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-18">#e1e4e8</span><span class="op">;</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-19">#919aa1</span><span class="op">;</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-20">#6a737d</span><span class="op">;</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-21">#454545</span><span class="op">;</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        <span class="va">--text-04</span><span class="ch">:</span> <span class="cn" id="color-swatch-22">#2f363d</span><span class="op">;</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        <span class="va">--red</span><span class="ch">:</span> <span class="cn" id="color-swatch-23">#a31f2f</span><span class="op">;</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>        <span class="va">--orange</span><span class="ch">:</span> <span class="cn" id="color-swatch-24">#e36209</span><span class="op">;</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        <span class="va">--yellow</span><span class="ch">:</span> <span class="cn" id="color-swatch-25">#fffbc4</span><span class="op">;</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>        <span class="va">--green</span><span class="ch">:</span> <span class="cn" id="color-swatch-26">#22863a</span><span class="op">;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>        <span class="va">--blue-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-27">#008abd</span><span class="op">;</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>        <span class="va">--blue-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-28">#005b80</span><span class="op">;</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>        <span class="va">--purple</span><span class="ch">:</span> <span class="cn" id="color-swatch-29">#663fac</span><span class="op">;</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>        <span class="va">--brown</span><span class="ch">:</span> <span class="cn" id="color-swatch-30">#cc6d00</span><span class="op">;</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#nav-home-icon</span> {</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>        <span class="kw">content</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">&quot;https://vimlena.com/img/icons/home-dark.svg&quot;</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#nav-posts-icon</span> {</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>        <span class="kw">content</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">&quot;https://vimlena.com/img/icons/document-dark.svg&quot;</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#nav-about-icon</span> {</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>        <span class="kw">content</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">&quot;https://vimlena.com/img/icons/user-dark.svg&quot;</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>body<span class="fu">.darkmodehc</span> {</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    <span class="va">--background-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-31">#000000</span><span class="op">;</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    <span class="va">--background-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-32">#1f2129</span><span class="op">;</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>    <span class="va">--background-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-33">#2b2d3b</span><span class="op">;</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-34">#a7adba</span><span class="op">;</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-35">#c0c5ce</span><span class="op">;</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-36">#dfe1e8</span><span class="op">;</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-04</span><span class="ch">:</span> <span class="cn" id="color-swatch-37">#eff1f5</span><span class="op">;</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>    <span class="va">--red</span><span class="ch">:</span> <span class="cn" id="color-swatch-38">#d79da3</span><span class="op">;</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>    <span class="va">--orange</span><span class="ch">:</span> <span class="cn" id="color-swatch-39">#da9e8b</span><span class="op">;</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>    <span class="va">--yellow</span><span class="ch">:</span> <span class="cn" id="color-swatch-40">#ebcb8b</span><span class="op">;</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    <span class="va">--green</span><span class="ch">:</span> <span class="cn" id="color-swatch-41">#a3be8c</span><span class="op">;</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>    <span class="va">--blue-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-42">#96b5b4</span><span class="op">;</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    <span class="va">--blue-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-43">#a1acbf</span><span class="op">;</span></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>    <span class="va">--purple</span><span class="ch">:</span> <span class="cn" id="color-swatch-44">#c2a3bb</span><span class="op">;</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    <span class="va">--brown</span><span class="ch">:</span> <span class="cn" id="color-swatch-45">#c7a699</span><span class="op">;</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>body<span class="fu">.lightmodehc</span> {</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>    <span class="va">--background-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-46">#ffffff</span><span class="op">;</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    <span class="va">--background-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-47">#f1f4f4</span><span class="op">;</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>    <span class="va">--background-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-48">#e1e4e8</span><span class="op">;</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-49">#4b5458</span><span class="op">;</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-50">#454545</span><span class="op">;</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-03</span><span class="ch">:</span> <span class="cn" id="color-swatch-51">#2f363d</span><span class="op">;</span></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>    <span class="va">--text-04</span><span class="ch">:</span> <span class="cn" id="color-swatch-52">#272e34</span><span class="op">;</span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>    <span class="va">--red</span><span class="ch">:</span> <span class="cn" id="color-swatch-53">#9f1e2d</span><span class="op">;</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>    <span class="va">--orange</span><span class="ch">:</span> <span class="cn" id="color-swatch-54">#893a06</span><span class="op">;</span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>    <span class="va">--yellow</span><span class="ch">:</span> <span class="cn" id="color-swatch-55">#575100</span><span class="op">;</span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>    <span class="va">--green</span><span class="ch">:</span> <span class="cn" id="color-swatch-56">#185d27</span><span class="op">;</span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>    <span class="va">--blue-01</span><span class="ch">:</span> <span class="cn" id="color-swatch-57">#005675</span><span class="op">;</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>    <span class="va">--blue-02</span><span class="ch">:</span> <span class="cn" id="color-swatch-58">#00405c</span><span class="op">;</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>    <span class="va">--purple</span><span class="ch">:</span> <span class="cn" id="color-swatch-59">#5f3ba0</span><span class="op">;</span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>    <span class="va">--brown</span><span class="ch">:</span> <span class="cn" id="color-swatch-60">#7a4100</span><span class="op">;</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+            </div>
+            <p>
+                The <code>&lt;body&gt;</code> element is dynamically updated when the site loads by a short JavaScript file as well. Because I wasn’t able to figure out how to nest <code>prefers-contrast</code> and <code>prefers-color-scheme</code> queries in CSS, I added a separate <code>.lightmodehc</code> and <code>.darkmodehc</code> class to the <code>&lt;body&gt;</code> which gets added by JavaScript based on what it detects from the user. Here’s what the JavaScript looks like (<a href="https://github.com/vimlena/vimlena-website/blob/main/js/light-dark-switch.js">GitHub link</a>):
+            </p>
+            <div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> prefersLight <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="fu">matchMedia</span>(<span class="st">&quot;(prefers-color-scheme: light)&quot;</span>)<span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> prefersDark <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="fu">matchMedia</span>(<span class="st">&quot;(prefers-color-scheme: dark)&quot;</span>)<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> prefersHC <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="fu">matchMedia</span>(<span class="st">&quot;(prefers-contrast: more)&quot;</span>)<span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (prefersLight<span class="op">.</span><span class="at">matches</span> <span class="op">&amp;&amp;</span> prefersHC<span class="op">.</span><span class="at">matches</span>) {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="at">classList</span><span class="op">.</span><span class="fu">add</span>(<span class="st">&quot;lightmodehc&quot;</span>)<span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (prefersDark<span class="op">.</span><span class="at">matches</span> <span class="op">&amp;&amp;</span> prefersHC<span class="op">.</span><span class="at">matches</span>) {</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="at">classList</span><span class="op">.</span><span class="fu">add</span>(<span class="st">&quot;darkmodehc&quot;</span>)<span class="op">;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+            </div>
+            <p>
+                So in this code, <code>prefersLight</code> indicates whether the user’s device prefers a light theme and <code>prefersDark</code> indicates a preference for a dark theme. <code>prefersHC</code> indicates that they are using a device set to high contrast mode. If somebody prefers a light theme and has high contrast mode on, add <code>lightmodehc</code> to the <code>&lt;body&gt;</code> element and if someone prefers a dark theme and has high contrast mode on, add <code>darkmodehc</code> to the <code>&lt;body&gt;</code> element. Between the CSS code defining what a basic light or dark theme looks like and then the JavaScript potentially modifying the high contrast variant of this theme, the website instantly serves the right color scheme and contrast level upon loading. To me, this feels more intuitive than having to click through a GUI to do this because it simply listens to preferences or accessibility settings you already have.
+            </p>
+            <figure>
+                <img src="../../../img/2025/08/theme-dark-mode.jpg" alt="A screenshot of the Introduction post on my website using the default dark color scheme. with light icons." title="A screenshot of the Introduction post on my website using the default dark color scheme. with light icons." onclick="window.open(this.src, '_blank');">
+                <img src="../../../img/2025/08/theme-dark-mode-hc.jpg" alt="A screenshot of the Introduction post on my website using the high contrast dark color scheme with light icons." title="A screenshot of the Introduction post on my website using the high contrast dark color scheme with light icons." onclick="window.open(this.src, '_blank');">
+                <img src="../../../img/2025/08/theme-light-mode.jpg" alt="A screenshot of the Introduction post on my website using the default light color scheme with dark icons." title="A screenshot of the Introduction post on my website using the default light color scheme with dark icons." onclick="window.open(this.src, '_blank');">
+                <img src="../../../img/2025/08/theme-light-mode-hc.jpg" alt="A screenshot of the Introduction post on my website using the high contrast light color scheme with dark icons." title="A screenshot of the Introduction post on my website using the high contrast light color scheme with dark icons." onclick="window.open(this.src, '_blank');">
+                <figcaption>
+                    A comparison between the dark, dark high contrast, light, and light high contrast color schemes respectively shown on the <a href="intro.html">Introduction</a> post on my website. The differences may be a bit subtle but the high contrast versiona all pass <a href="https://www.allaccessible.org/wcag-level-a-aa-and-aaa-whats-the-difference/">the WCAG AAA standards</a> for accessible contrast based on the <a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a>.
+                </figcaption>
+            </figure>
+            <h3>Typography</h3>
+            <p>
+                First, I want to point out that there’s a difference between typography and lettering. <a href="https://en.wikipedia.org/wiki/Typography">Wikipedia defines typography</a> as “the art and technique of arranging type to make written language legible, readable and appealing when displayed” which is <a href="https://en.wikipedia.org/wiki/Lettering">distinct from lettering</a>, or the “act or result of artfully drawing letters, instead of writing them simply.” Basically, trying to make a web page or a document look good and be legible is dealing in typography and using a paintbrush to expressively write out words on a poster is lettering. My interest in typography was kicked off by reading the free online book <a href="https://practicaltypography.com/">Butterick’s Practical Typography</a>, it greatly increased my appreciation for typography and typeface/font design and influenced my general design decisions for documents and webpages.
+            </p>
+            <p>
+                Next, I want to note the distinction between typefaces and fonts. <a href="https://en.wikipedia.org/wiki/Typeface">Wikipedia defines a typeface</a> as “a design of letters, numbers and other symbols, to be used in printing or for electronic display,” and <a href="https://en.wikipedia.org/wiki/Font">defines a font</a> as “a particular size, weight and style of a typeface.” So, in example, if you’re talking about Helvetica then you’re referring to a typeface but if you’re talking about Helvetica bold, Helvetica italic, or Helvetica light, then you’re referring to a font of the Helvetica typeface. Also maybe I’m showing my design nerd side a bit here but did you know there’s <a href="https://archive.org/details/helvetica-2007">a documentary about Helvetica</a> that’s actually pretty interesting?
+            </p>
+            <p>
+                Making sure we understand the distinctions between typography/lettering and typefaces/fonts isn’t just being pedantic, the distinction is significant for this section and it kinda bugs me when people use them interchangeably.
+            </p>
+            <p>
+                Anyway, with that out of the way, I wanted to go for a typefaces that are more accessible/dyslexia-friendly which also fit with the visual direction of the site. After doing some research, I surveyed some common options people used/recommended and decided on going with <a href="https://fonts.adobe.com/fonts/source-sans">Source Sans 3</a> (formerly known as Source Sans Pro) for body text because it’s quite comparable to popular sans-serif accessible fonts like Tahoma, Verdana, and Calibri but free to download use online. I elected to use this for body text because sans-serif fonts are generally seen as more accessible.
+            </p>
+            <p>
+                For headings, I wanted a serif typeface to contrast with the body text that was comparable to the accessible Times New Roman (also I don’t really like Times New Roman). After deliberating a bit, I decided to go with <a href="https://fonts.adobe.com/fonts/source-serif-4">Source Serif 4</a> (formerly known as Source Serif Pro) because it pairs well with it’s sibling Source Sans 3 and is also free to download and use online. The specific font I used for headings is the semi-bold version with a weight of 600 (for context, “regular” type is usually 400 and “bold” is usually 700) because I liked how it didn’t feel too heavy but still stuck out.
+            </p>
+            <p>
+                This isn’t a blog for programming specifically, although it is a hobby of mine, so I wanted to make sure to also include a monospace typeface for displaying any code I may reference. I cycled between a few options but landed on a variant of <a href="https://levien.com/type/myfonts/inconsolata.html">Inconsolata</a> called <a href="https://github.com/MihailJP/Inconsolata-LGC">Inconsolata LGC</a> which adds italic and bold fonts to the original version, has better line and character spacing, has support for Cyrillic and Greek, and generally renders better on Windows in my experience (the font rendering on Windows is really abysmal in my opinion). Inconsolata LGC also has many similar <a href="https://en.wikipedia.org/wiki/Letterform">letterforms</a> compared to Source Sans 3 and Source Serif 4 and is a generally all-around great looking typeface.
+            </p>
+            <figure>
+                <img src="../../../img/2025/08/typefaces.jpg" alt="A picture comparing the three typefaces used on this website, Source Serif 4, Source Sans 3, and Inconsolata LGC. The text says the typeface name, what I use it for, spells out 'the quick brown fox jumps over the lazy dog' in all lowercase then all uppercase, and ends with a series of punctuation marks and numbers." title="A picture comparing the three typefaces used on this website, Source Serif 4, Source Sans 3, and Inconsolata LGC. The text says the typeface name, what I use it for, spells out 'the quick brown fox jumps over the lazy dog' in all lowercase then all uppercase, and ends with a series of punctuation marks and numbers." onclick="window.open(this.src, '_blank');">
+                <figcaption>
+                    What the alphabet, numbers, and various symbols look like in <a href="https://fonts.adobe.com/fonts/source-serif-4">Source Serif 4</a> (for headings), <a href="https://fonts.adobe.com/fonts/source-sans">Source Sans 3</a> (for body text), and <a href="https://github.com/MihailJP/Inconsolata-LGC">Incolsolata LGC</a> (for code or monospace).
+                </figcaption>
+            </figure>
+            <p>
+                I tested using the popular web font service Google Fonts for bring my specific typeface preferences to the website but it served to slow down the loading time too much and also I don’t want to subject people who view the site to Google’s analytics or potentially have the font files change or be unavailable if Google modified or deleted the files they use. I considered just using common operating system fonts but I didn’t really like how they looked and wanted it to be consistent across platforms. So I tested just loading the fonts onto the web server and calling them using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">CSS <code>@font-face</code> rule</a> and it actually loaded quite fast so it seemed like the way to do.
+            </p>
+            <p>
+                I intentionally made the maximum width of this blog to be 38 rem (or about 608 pixels if you’re using the default 16 pixel font size) so that the average line length doesn’t exceed 90 characters, <a href="https://practicaltypography.com/line-length.html">the upward limit for comfortable reading</a>. If your line length is too long, your eyes have to travel too far to find the start of the next line and it’s more visually tiring. I set the default line spacing to be 1.7 (1 is single-spaced and 2 is double-spaced) for the sake of increased legibility and comfort. I also primarily use rem instead of pixels, em, percentages, or the other stuff out there <a href="https://www.freecodecamp.org/news/css-units-when-to-use-each-one/">because it scales well based on the user’s text size preference</a> which makes it more accessible if a user prefers larger text.
+            </p>
+            <h2>Conclusion</h2>
+            <p>
+                So that’s why and how I made a blog on an independent website. Feel free to <a href="https://github.com/vimlena/vimlena-website">download and use the code on my GitHub</a> and see my <a href="../../../about.html">about page</a> for the licensing on it. The underlying code is licensed as GPL v3 and the content of the pages are licensed as Creative Commons Attribution Non-Commercial Share Alike v4. I’m not an expert web designer or anything, I’m literally just a hobbyist, but hopefully this was interesting and/or informative!
+            </p>
+            <hr>
+            <p>
+                <strong>Edit on <time datetime="2025-08-15">August 15, 2025</time>:</strong> I felt that this article could benefit from more images to show what I am talking about so I added a comparison of Markdown text and HTML code, pictures of the the stock color schemes that inspired the ones this website uses, some pictures of elementary OS icons, and a comparison of how the various dark, high contrast dark, light, and high contrast light color schemes look on the blog. Also made it so that if you click or tap on images, they open with full resolution in a new tab so you can view the details.
+            </p>
+        </article>
+        <footer>
+            <ul class="tags-list">
+                <li><a href="../../../posts.html#personal-tag">#personal</a></li>
+                <li><a href="../../../posts.html#design-tag">#design</a></li>
+                <li><a href="../../../posts.html#tech-tag">#tech</a></li>
+            </ul>
+            <p class="back-to-top-p">
+                <a href="#" class="back-to-top">↑ Back to top</a>
+            </p>
+        </footer>
+        <script src="../../../js/light-dark-switch.js" defer></script>
+
+    </body>
+</html>
