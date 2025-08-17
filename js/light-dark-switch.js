@@ -6,17 +6,26 @@ let prefersHC = window.matchMedia("(prefers-contrast: more)");
  * contrast, or dark mode normal contrast when paired with ".matches"
  */
 
-if (prefersLight.matches && prefersHC.matches) {
-    document.body.classList.add("lightmodehc");
-}
-if (prefersDark.matches && prefersHC.matches) {
-    document.body.classList.add("darkmodehc");
-}
+window.onload = function() {
+    if (window.matchMedia && prefersLight.matches && prefersHC.matches) {
+        document.body.classList.add("lightmodehc");
+    } else if (window.matchMedia && prefersLight.matches && !prefersHC.matches) {
+        document.body.classList.add("lightmodehc");
+    } else if (window.matchMedia && prefersDark.matches && prefersHC.matches) {
+        document.body.classList.add("darkmodehc");
+    } else {
+        document.body.classList.add("darkmode");
+    }
+};
 /* if user wants a light, high contrast theme
  *     add "lightmodehc" to body
- * if user wants a dark, high contrast theme
+ * else if user wants a light, non-high contrast theme
+ *     add "lightmode" to body
+ * else if user wants a dark, high contrast theme
  *     add "darkmodehc" to body
- *
+ * else
+ *     add "darkmode" to body
+ * end
  * these color/contrast themes are all defined in ../css/stylesheet.css from
  * lines 68-101
  */
