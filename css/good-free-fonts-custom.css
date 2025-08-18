@@ -317,7 +317,7 @@
 /* dejavu sans mono */
 @font-face {
     font-display: swap;
-    font-family: 'DejaVu Serif';
+    font-family: 'DejaVu Sans Mono';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/DejaVuLGCSansMono.woff2') format('woff2');
