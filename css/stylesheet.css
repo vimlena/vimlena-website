@@ -215,9 +215,9 @@ body {
     color: var(--text-03);
     font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", Roboto, Calibri, "Segoe UI", sans-serif;
     font-kerning: normal;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     hyphens: none;
-    line-height: 1.45;
+    line-height: 1.6;
     margin: 0 auto;
     max-width: 36rem;
     padding: 1rem;
@@ -229,7 +229,7 @@ body {
     body {
         background-color: transparent;
         color: var(--text-02);
-        font-size: 1.05rem;
+        font-size: 1.1rem;
     }
     p,
     h2,
@@ -318,29 +318,29 @@ h6 {
 }
 
 h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     text-align: center;
     margin-block: 0.67em;
 }
 
 h2 {
-    font-size: 1.65rem;
+    font-size: 1.7rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
 }
 
 h4 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 h6 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 
@@ -399,6 +399,8 @@ ul.tags-list {
 
 a:link {
     color: var(--blue-02);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 a:visited {
