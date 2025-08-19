@@ -135,33 +135,6 @@ body.lightmodehc {
     }
 }
 
-body.lightmode {
-    --background-01: #ffffff;
-    --background-02: #f1f1f1;
-    --background-03: #e1e4e8;
-    --text-01: #919aa1;
-    --text-02: #6a737d;
-    --text-03: #454545;
-    --text-04: #2f363d;
-    --red: #a31f2f;
-    --orange: #e36209;
-    --yellow: #fffbc4;
-    --green: #22863a;
-    --blue-01: #008abd;
-    --blue-02: #005b80;
-    --purple: #663fac;
-    --brown: #cc6d00;
-    #nav-home-icon {
-        content: url("https://vimlena.com/img/icons/home-dark.svg");
-    }
-    #nav-posts-icon {
-        content: url("https://vimlena.com/img/icons/document-dark.svg");
-    }
-    #nav-about-icon {
-        content: url("https://vimlena.com/img/icons/user-dark.svg");
-    }
-}
-
 body.darkmodehc {
     --background-01: #000000;
     --background-02: #1f2129;
@@ -178,33 +151,6 @@ body.darkmodehc {
     --blue-02: #a1acbf;
     --purple: #c2a3bb;
     --brown: #c7a699;
-}
-
-body.darkmode {
-    --background-01: #2b303b;
-    --background-02: #343d46;
-    --background-03: #4f5b66;
-    --text-01: #a7adba;
-    --text-02: #c0c5ce;
-    --text-03: #dfe1e8;
-    --text-04: #eff1f5;
-    --red: #bf616a;
-    --orange: #d08770;
-    --yellow: #ebcb8b;
-    --green: #a3be8c;
-    --blue-01: #96b5b4;
-    --blue-02: #8fa1b3;
-    --purple: #b48ead;
-    --brown: #ab7967;
-    #nav-home-icon {
-        content: url("https://vimlena.com/img/icons/home-light.svg");
-    }
-    #nav-posts-icon {
-        content: url("https://vimlena.com/img/icons/document-light.svg");
-    }
-    #nav-about-icon {
-        content: url("https://vimlena.com/img/icons/user-light.svg");
-    }
 }
 
 
