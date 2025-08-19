@@ -213,13 +213,13 @@ body.darkmode {
 body {
     background-color: var(--background-02);
     color: var(--text-03);
-    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", Roboto, Calibri, "Segoe UI", sans-serif;
     font-kerning: normal;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     hyphens: none;
-    line-height: 1.7;
+    line-height: 1.45;
     margin: 0 auto;
-    max-width: 38rem;
+    max-width: 36rem;
     padding: 1rem;
     text-rendering: auto;
     word-wrap: break-word;
@@ -308,7 +308,7 @@ h4,
 h5,
 h6 {
     color: var(--text-04);
-    font-family: "Source Serif 4", Palatino, Georgia, "Bookman Old Style", "Century Schoolbook", Times, "Times New Roman", serif;
+    font-family: "Source Serif 4", Palatino, Georgia, Times, serif;
     font-weight: 600;
     padding-top: 1rem;
 }
@@ -318,7 +318,7 @@ h6 {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     text-align: center;
     margin-block: 0.67em;
 }
@@ -340,7 +340,7 @@ h5 {
 }
 
 h6 {
-    font-size: 1.11rem;
+    font-size: 1.1rem;
 }
 
 
@@ -368,7 +368,7 @@ nav ul {
 nav ul li,
 ul.tags-list li {
     display: inline;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     padding: 0rem 0.45rem 0rem 0.45rem;
     text-align: center;
 }
@@ -385,8 +385,8 @@ ul#social-links li {
 }
 
 .post-tag {
-    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Cantarell, "Helvetica Neue", sans-serif;
-    font-size: 1.2rem;
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Calibri, Roboto, "Segoe UI",  sans-serif;
+    font-size: 1.05rem;
     font-weight: 400;
 }
 
@@ -475,7 +475,7 @@ pre {
     background-color: var(--background-01);
     border-radius: 0.4rem;
     color: var(--text-02);
-    font-family: "Incolsolata LGC", "Inconsolata", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-family: "Incolsolata LGC", "Inconsolata", "SFMono-Regular", Consolas, Menlo, "Liberation Mono", monospace;
     font-size: 0.9rem;
     margin: 0;
     padding: 0.15rem;
@@ -553,11 +553,6 @@ pre.numberSource code>span {
 }
 
 pre.numberSource code>span>a:first-child::before {
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
     border: none;
     color: var(--background-01);
     content: counter(source-line);
