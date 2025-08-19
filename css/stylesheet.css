@@ -162,6 +162,7 @@ body {
     font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", Roboto, Calibri, "Segoe UI", sans-serif;
     font-kerning: normal;
     font-size: 1.1rem;
+    font-variant-ligatures: normal;
     hyphens: none;
     line-height: 1.6;
     margin: 0 auto;
