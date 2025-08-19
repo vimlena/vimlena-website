@@ -206,10 +206,10 @@ figure {
 }
 
 blockquote {
-    border-left: 0.1rem solid var(--text-01);
+    border-left: 1px solid var(--text-01);
     color: var(--text-03);
-    margin: 1rem 0rem 1rem 1.7em;
-    padding-left: 1rem;
+    margin: 0.5rem 0rem 0.5rem 1rem;
+    padding-left: 0.5rem;
 }
 
 hr {
