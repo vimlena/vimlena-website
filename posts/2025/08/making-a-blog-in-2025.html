@@ -53,7 +53,7 @@
             <p>
                 This post is going to be about my own motivations for making a blog/website not tied to social media or medium/substack/wordpress/what have you and the rationale for some of the technical decisions I made while developing it. The first part is more generally focused but the latter half is probably just going to be talking about web design so it may not be for everyone.
             </p>
-            <h2>Against the Closed &amp; Convenient Web</h2>
+            <h2>Against the Closed and Convenient Web</h2>
             <p>
                 It’s probably never been easier than it is now to post (for better or worse). Between conventional social media, micro-blogging, long-form writing sites and blogs, Forum-adjacent sites, and platforms that obscure the difference between social media and messaging, you have a wide variety of formats and options available. There’s also been increase in non-technical website creation services the past decade that allow users to drag and drop sections onto a page or choose from customizable templates, no coding expertise required. This is all a pretty remarkable change of pace from how the internet was in the days of Bulletin Board Systems (BBS), Internet Relay Chat (IRC), and Web 1.0 sites. It would seem almost backwards to make a read-only independent website considering how utilizing already-existing is generally pretty easy and free or cheap.
             </p>
@@ -69,7 +69,7 @@
             <p>
                 So yeah, I wanted to make a website that would be my own that anybody could access. It isn’t dependent on a platform, doesn’t bug people to make an account or get a membership, and it’s easy to maintain. If, for some reason, this domain dies or something happens to a service I use then I have all of the underlying code on my computer and can simply re-upload it somewhere else without issue.
             </p>
-            <h2>Design &amp; Coding</h2>
+            <h2>Design and Coding</h2>
             <p>
                 I didn’t have an extremely solid idea exactly what I wanted to do with this website before I started making it. I have always been sort of a computer nerd and would do things like bringing my laptop to school with me so that I could make little silly programs and tweak my Linux install rather than doing schoolwork. Before I had a computer to myself and access to the internet, I would spend hours adjusting different settings on my family’s Windows 95 (and later XP) install. Messing around with a technology and seeing what happens is part of the fun for me, I think being too deterministic about design or even purpose can get in the way of exploration and play leads to new ideas and approaches.
             </p>
@@ -90,7 +90,7 @@
             <p>
                 To convert my plain text markdown files into usable HTML, I use <a href="https://pandoc.org/">Pandoc</a> which is a simple terminal-based program that converts document formats into other document formats. Pandoc has a ton of really useful features and it’s probably one of my favorite utilities I’ve ever used. Once I have a HTML file, I copy/paste the HTML onto a blank webpage template I built for the website and it’s good to go live after I check that everything rendered right.
             </p>
-            <h3>Colors, Contrast, &amp; Icons</h3>
+            <h3>Colors, Contrast, and Icons</h3>
             <p>
                 I tried my best to balance visually pleasing/pleasant colors that were still accessible. I pulled the colors I used for the default dark theme from <a href="https://github.com/chriskempson/base16-default-schemes/tree/master">Chris Kempson’s base16 colorschemes</a>, specifically one I really like called “ocean” which has good contrast and a cool background color. I defaulted to this theme because I personally prefer dark themes with light text. Next, I workshopped a few different light themes but decided to use <a href="https://github.com/vallyscode/cloud-vscode-theme/tree/main">Valerii Lysenko’s “cloud” color scheme designed for VS Code</a> because thought it looked nice with decent contrast and good colors. I tried implementing a theme switcher GUI but decided it would just be easier to detect whether the user has a preference based on the device they’re viewing utilizing the <code>prefers-color-scheme</code> CSS media feature (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">read about that here</a>).
             </p>
