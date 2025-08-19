@@ -217,6 +217,10 @@ hr {
     color: var(--text-02);
 }
 
+address {
+    font-style: normal;
+}
+
 .column {
     display: inline-block;
     vertical-align: top;
