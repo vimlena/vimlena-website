@@ -346,18 +346,26 @@ ul.tags-list {
 
 a:link {
     color: var(--blue-02);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--blue-02);
+}
+
+a:hover {
+    color: var(--blue-02);
+    text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
 
-a:visited {
-    color: var(--purple);
-}
-
 a:focus,
-a:hover,
 a:active {
     color: var(--red);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 header a:link,
