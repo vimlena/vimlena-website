@@ -156,6 +156,10 @@ body.darkmodehc {
 
 /* ## Basic Formatting */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--background-02);
     color: var(--text-03);
