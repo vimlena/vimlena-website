@@ -319,7 +319,7 @@ nav ul {
 nav ul li,
 ul.tags-list li {
     display: inline;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     padding: 0rem 0.45rem 0rem 0.45rem;
     text-align: center;
 }
@@ -350,26 +350,19 @@ ul.tags-list {
 
 a:link {
     color: var(--blue-02);
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 a:visited {
-    color: var(--blue-02);
-}
-
-a:hover {
-    color: var(--blue-02);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
+    color: var(--purple);
 }
 
 a:focus,
+a:hover,
 a:active {
     color: var(--red);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
 }
 
 header a:link,
@@ -380,6 +373,10 @@ header a:hover,
 header a:active {
     text-decoration: none;
     color: var(--text-04);
+}
+
+.tags-list li a {
+    text-decoration: none;
 }
 
 .back-to-top:link,
