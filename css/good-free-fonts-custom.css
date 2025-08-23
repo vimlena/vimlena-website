@@ -3,346 +3,346 @@
 /* ## Sample rules */
 
 .open-sans-sample {
-    font-family: "Open Sans";
-    font-size: 1.2rem;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
 }
 
 .lato-sample {
-    font-family: "Lato";
-    font-size: 1.2rem;
+  font-family: "Lato";
+  font-size: 1.2rem;
 }
 
 .inter-sample {
-    font-family: "Inter";
-    font-size: 1.2rem;
+  font-family: "Inter";
+  font-size: 1.2rem;
 }
 
 .monsterrat-sample {
-    font-family: "Monsterrat";
-    font-size: 1.2rem;
+  font-family: "Monsterrat";
+  font-size: 1.2rem;
 }
 
 .linux-libertine-sample {
-    font-family: "Linux Libertine";
-    font-size: 1.2rem;
+  font-family: "Linux Libertine";
+  font-size: 1.2rem;
 }
 
 .crimson-text-sample {
-    font-family: "Crimson Text";
-    font-size: 1.2rem;
+  font-family: "Crimson Text";
+  font-size: 1.2rem;
 }
 
 .lora-sample {
-    font-family: "Lora";
-    font-size: 1.2rem;
+  font-family: "Lora";
+  font-size: 1.2rem;
 }
 
 .inconsolata-lgc-sample {
-    font-family: "Inconsolata LGC";
-    font-size: 1.2rem;
+  font-family: "Inconsolata LGC";
+  font-size: 1.2rem;
 }
 
 .meslo-lg-m-sample {
-    font-family: "Meslo LG M";
-    font-size: 1.2rem;
+  font-family: "Meslo LG M";
+  font-size: 1.2rem;
 }
 
 .jetbrains-mono-sample {
-    font-family: "JetBrains Mono";
-    font-size: 1.2rem;
+  font-family: "JetBrains Mono";
+  font-size: 1.2rem;
 }
 
 .jetbrains-mono-ligature-sample {
-    font-family: "JetBrains Mono";
+  font-family: "JetBrains Mono";
 }
 
 .anonymous-pro-sample {
-    font-family: "Anonymous Pro";
-    font-size: 1.2rem;
+  font-family: "Anonymous Pro";
+  font-size: 1.2rem;
 }
 
 .iosevka-sample {
-    font-family: "Iosevka";
-    font-size: 1.2rem;
+  font-family: "Iosevka";
+  font-size: 1.2rem;
 }
 
 .source-sans-3-sample {
-    font-family: "Source Sans 3";
-    font-size: 1.2rem;
+  font-family: "Source Sans 3";
+  font-size: 1.2rem;
 }
 
 .source-serif-4-sample {
-    font-family: "Source Serif 4";
-    font-size: 1.2rem;
+  font-family: "Source Serif 4";
+  font-size: 1.2rem;
 }
 
 .source-code-pro-sample {
-    font-family: "Source Code Pro";
-    font-size: 1.2rem;
+  font-family: "Source Code Pro";
+  font-size: 1.2rem;
 }
 
 .cmu-sans-serif-sample {
-    font-family: "CMU Sans Serif";
-    font-size: 1.2rem;
+  font-family: "CMU Sans Serif";
+  font-size: 1.2rem;
 }
 
 .cmu-serif-sample {
-    font-family: "CMU Serif";
-    font-size: 1.2rem;
+  font-family: "CMU Serif";
+  font-size: 1.2rem;
 }
 
 .cmu-typewriter-text-sample {
-    font-family: "CMU Typewriter Text";
-    font-size: 1.2rem;
+  font-family: "CMU Typewriter Text";
+  font-size: 1.2rem;
 }
 
 .cmu-bright-sample {
-    font-family: "CMU Bright";
-    font-size: 1.2rem;
+  font-family: "CMU Bright";
+  font-size: 1.2rem;
 }
 
 .cmu-concrete-sample {
-    font-family: "CMU Concrete";
-    font-size: 1.2rem;
+  font-family: "CMU Concrete";
+  font-size: 1.2rem;
 }
 
 .dejavu-sans-sample {
-    font-family: "DejaVu Sans";
-    font-size: 1.2rem;
+  font-family: "DejaVu Sans";
+  font-size: 1.2rem;
 }
 
 .dejavu-serif-sample {
-    font-family: "DejaVu Serif";
-    font-size: 1.2rem;
+  font-family: "DejaVu Serif";
+  font-size: 1.2rem;
 }
 
 .dejavu-sans-mono-sample {
-    font-family: "DejaVu Sans Mono";
-    font-size: 1.2rem;
+  font-family: "DejaVu Sans Mono";
+  font-size: 1.2rem;
 }
 
 .ibm-plex-sans-sample {
-    font-family: "IBM Plex Sans";
-    font-size: 1.2rem;
+  font-family: "IBM Plex Sans";
+  font-size: 1.2rem;
 }
 
 .ibm-plex-serif-sample {
-    font-family: "IBM Plex Serif";
-    font-size: 1.2rem;
+  font-family: "IBM Plex Serif";
+  font-size: 1.2rem;
 }
 
 .ibm-plex-mono-sample {
-    font-family: "IBM Plex Mono";
-    font-size: 1.2rem;
+  font-family: "IBM Plex Mono";
+  font-size: 1.2rem;
 }
 
 /* ## Importing fonts */
 
 /* open sans */
 @font-face {
-    font-display: swap;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/open-sans-v43-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v43-latin-regular.woff2') format('woff2');
 }
 
 /* lato */
 @font-face {
-    font-display: swap;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
 }
 
 /* inter  */
 @font-face {
-    font-display: swap;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/inter-v19-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v19-latin-regular.woff2') format('woff2');
 }
 
 /* monsterrat */
 @font-face {
-    font-display: swap;
-    font-family: 'Monsterrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Monsterrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
 }
 
 /* linux libertine */
 @font-face {
-    font-display: swap;
-    font-family: 'Linux Libertine';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/LinLibertine_R.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Linux Libertine';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/LinLibertine_R.woff2') format('woff2');
 }
 
 /* linux libertine */
 @font-face {
-    font-display: swap;
-    font-family: 'Linux Libertine';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/LinLibertine_R.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Linux Libertine';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/LinLibertine_R.woff2') format('woff2');
 }
 
 /* crimson text */
 @font-face {
-    font-display: swap;
-    font-family: 'Crimson Text';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/crimson-text-v19-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/crimson-text-v19-latin-regular.woff2') format('woff2');
 }
 
 /* lora */
 @font-face {
-    font-display: swap;
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/lora-v36-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lora-v36-latin-regular.woff2') format('woff2');
 }
 
 /* meslo lg m */
 @font-face {
-    font-display: swap;
-    font-family: 'Meslo LG M';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/MesloLGM-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Meslo LG M';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MesloLGM-Regular.woff2') format('woff2');
 }
 
 /* jetbrains mono  */
 @font-face {
-    font-display: swap;
-    font-family: 'JetBrains Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/jetbrains-mono-v23-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/jetbrains-mono-v23-latin-regular.woff2') format('woff2');
 }
 
 /* anonymous pro */
 @font-face {
-    font-display: swap;
-    font-family: 'Anonymous Pro';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/anonymous-pro-v21-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/anonymous-pro-v21-latin-regular.woff2') format('woff2');
 }
 
 /* iosevka */
 @font-face {
-    font-display: swap;
-    font-family: 'Iosevka';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/iosevka-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Iosevka';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/iosevka-regular.woff2') format('woff2');
 }
 
 /* source code pro */
 @font-face {
-    font-display: swap;
-    font-family: 'Source Code Pro';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/source-code-pro-v30-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/source-code-pro-v30-latin-regular.woff2') format('woff2');
 }
 
 /* cmu bright */
 @font-face {
-    font-display: swap;
-    font-family: 'CMU Bright';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/cmunbmr.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'CMU Bright';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cmunbmr.woff2') format('woff2');
 }
 
 /* cmu concrete */
 @font-face {
-    font-display: swap;
-    font-family: 'CMU Concrete';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/cmunorm.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'CMU Concrete';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cmunorm.woff2') format('woff2');
 }
 
 /* cmu serif */
 @font-face {
-    font-display: swap;
-    font-family: 'CMU Serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/cmunrm.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'CMU Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cmunrm.woff2') format('woff2');
 }
 
 /* cmu typewriter text */
 @font-face {
-    font-display: swap;
-    font-family: 'CMU Typewriter Text';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/cmuntt.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'CMU Typewriter Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cmuntt.woff2') format('woff2');
 }
 
 /* cmu sans serif */
 @font-face {
-    font-display: swap;
-    font-family: 'CMU Sans Serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/cmunss.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'CMU Sans Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cmunss.woff2') format('woff2');
 }
 
 /* dejavu sans */
 @font-face {
-    font-display: swap;
-    font-family: 'DejaVu Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/DejaVuLGCSans.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'DejaVu Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DejaVuLGCSans.woff2') format('woff2');
 }
 
 /* dejavu serif */
 @font-face {
-    font-display: swap;
-    font-family: 'DejaVu Serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/DejaVuLGCSerif.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'DejaVu Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DejaVuLGCSerif.woff2') format('woff2');
 }
 
 /* dejavu sans mono */
 @font-face {
-    font-display: swap;
-    font-family: 'DejaVu Sans Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/DejaVuLGCSansMono.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'DejaVu Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DejaVuLGCSansMono.woff2') format('woff2');
 }
 
 /* ibm plex sans */
 @font-face {
-    font-display: swap;
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/ibm-plex-sans-v22-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ibm-plex-sans-v22-latin-regular.woff2') format('woff2');
 }
 
 /* ibm plex mono */
 @font-face {
-    font-display: swap;
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/ibm-plex-mono-v19-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ibm-plex-mono-v19-latin-regular.woff2') format('woff2');
 }
 
 /* ibm plex serif */
