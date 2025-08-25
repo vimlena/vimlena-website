@@ -259,6 +259,9 @@ address {
   text-decoration: underline;
 }
 
+#mastodon-verification {
+  display: none;
+}
 
 /* ## Headings & Header */
 
