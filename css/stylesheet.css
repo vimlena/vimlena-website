@@ -347,6 +347,14 @@ ul.tags-list li {
   padding: 0rem 0.45rem 0rem 0.45rem;
   text-align: center;
 }
+#TOC {
+  list-style: circle;
+}
+
+#TOC ul li {
+  display: block;
+  text-align: left;
+}
 
 ul#social-links {
   list-style: none;
