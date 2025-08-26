@@ -47,7 +47,6 @@
  * lots of dumb stuff happens because of it online.
  */
 
-
 /* ## color schemes defined */
 
 @media (prefers-color-scheme: dark) {
@@ -162,7 +161,6 @@ body.darkmodehc {
   --brown: #c7a699;
 }
 
-
 /* ## Basic Formatting */
 
 * {
@@ -172,7 +170,16 @@ body.darkmodehc {
 body {
   background-color: var(--background-02);
   color: var(--text-03);
-  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", Roboto, Calibri, "Segoe UI", sans-serif;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    BlinkMacSystemFont,
+    Inter,
+    "Helvetica Neue",
+    Roboto,
+    Calibri,
+    "Segoe UI",
+    sans-serif;
   font-kerning: normal;
   font-size: 1.1rem;
   font-variant-ligatures: normal;
@@ -312,7 +319,6 @@ h6 {
   font-size: 1.15rem;
 }
 
-
 /* ## Lists */
 
 ol,
@@ -324,8 +330,8 @@ ul {
   list-style-type: "-  ";
 }
 
-li>ol,
-li>ul {
+li > ol,
+li > ul {
   margin-top: 0rem;
 }
 
@@ -354,7 +360,15 @@ ul#social-links li {
 }
 
 .post-tag {
-  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Calibri, Roboto, "Segoe UI", sans-serif;
+  font-family:
+    "Source Sans 3",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Calibri,
+    Roboto,
+    "Segoe UI",
+    sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -362,7 +376,6 @@ ul#social-links li {
 ul.tags-list {
   list-style: none;
 }
-
 
 /* ## Links */
 
@@ -405,7 +418,6 @@ header a:active {
   color: var(--blue-01);
   text-decoration: none;
 }
-
 
 /* ## Code & Pre-formatted Text
  *
@@ -451,7 +463,9 @@ pre {
   background-color: var(--background-01);
   border-radius: 0.4rem;
   color: var(--text-02);
-  font-family: "Incolsolata LGC", "Inconsolata", "SFMono-Regular", Consolas, Menlo, "Liberation Mono", monospace;
+  font-family:
+    "Incolsolata LGC", "Inconsolata", "SFMono-Regular", Consolas, Menlo,
+    "Liberation Mono", monospace;
   font-size: 0.9rem;
   margin: 0;
   padding: 0.15rem;
@@ -475,21 +489,21 @@ pre code {
   padding: 0.15rem;
 }
 
-pre>code.sourceCode {
+pre > code.sourceCode {
   position: relative;
   white-space: pre;
 }
 
-pre>code.sourceCode>span {
+pre > code.sourceCode > span {
   display: inline-block;
   line-height: 1.5;
 }
 
-pre>code.sourceCode>span:empty {
+pre > code.sourceCode > span:empty {
   height: 1.2rem;
 }
 
-code.sourceCode>span {
+code.sourceCode > span {
   color: inherit;
   text-decoration: inherit;
 }
@@ -509,11 +523,11 @@ pre.sourceCode {
 }
 
 @media print {
-  pre>code.sourceCode {
+  pre > code.sourceCode {
     white-space: pre-wrap;
   }
 
-  pre>code.sourceCode>span {
+  pre > code.sourceCode > span {
     text-indent: -4rem;
     padding-left: 4rem;
   }
@@ -523,13 +537,13 @@ pre.numberSource code {
   counter-reset: source-line 0;
 }
 
-pre.numberSource code>span {
+pre.numberSource code > span {
   counter-increment: source-line;
   left: -3rem;
   position: relative;
 }
 
-pre.numberSource code>span>a:first-child::before {
+pre.numberSource code > span > a:first-child::before {
   border: none;
   color: var(--background-01);
   content: counter(source-line);
@@ -550,7 +564,7 @@ pre.numberSource {
 }
 
 @media screen {
-  pre>code.sourceCode>span>a:first-child::before {
+  pre > code.sourceCode > span > a:first-child::before {
     text-decoration: underline;
   }
 }
@@ -583,7 +597,7 @@ code span.st {
 }
 
 code span.ot {
-  color: var(--yellow)
+  color: var(--yellow);
 }
 
 code span.cf,
@@ -638,7 +652,6 @@ code span.wa {
   font-weight: bold;
 }
 
-
 /* ## Tables */
 
 table {
@@ -669,29 +682,12 @@ td {
   padding: 0.125rem 0.5rem 0.25rem 0.5rem;
 }
 
-
-/* ## Table of contents
- *
- * optionally generated with the `--toc` flag when converting markdown to html
- */
-
-#TOC li {
-  list-style: none;
-}
-
-#TOC a:not(:hover),
-.directions {
-  text-decoration: none;
-}
-
-
 /* ## @font-face imports
  *
  * brings in fonts from `~/fonts/*.woff2` & `*.ttf`, woff2 is preferred but
  * ttf is included for supporting browsers that may not be outdated or are
  * having issues rendering woff2 for some reason
  */
-
 
 /* ### Inconsolata LGC */
 
@@ -700,7 +696,9 @@ td {
   font-family: "Inconsolata LGC";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Inconsolata-LGC.woff2") format("woff2"), url("../fonts/Inconsolata-LGC.ttf") format("truetype");
+  src:
+    url("../fonts/Inconsolata-LGC.woff2") format("woff2"),
+    url("../fonts/Inconsolata-LGC.ttf") format("truetype");
 }
 
 @font-face {
@@ -708,7 +706,9 @@ td {
   font-family: "Inconsolata LGC";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/Inconsolata-LGC-Italic.woff2") format("woff2"), url("../fonts/Inconsolata-LGC-Italic.ttf") format("truetype");
+  src:
+    url("../fonts/Inconsolata-LGC-Italic.woff2") format("woff2"),
+    url("../fonts/Inconsolata-LGC-Italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -716,7 +716,9 @@ td {
   font-family: "Inconsolata LGC";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Inconsolata-LGC-Bold.woff2") format("woff2"), url("../fonts/Inconsolata-LGC-Bold.ttf") format("truetype");
+  src:
+    url("../fonts/Inconsolata-LGC-Bold.woff2") format("woff2"),
+    url("../fonts/Inconsolata-LGC-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -724,9 +726,10 @@ td {
   font-family: "Inconsolata LGC";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/Inconsolata-LGC-BoldItalic.woff2") format("woff2"), url("../fonts/Inconsolata-LGC-BoldItalic.ttf") format("truetype");
+  src:
+    url("../fonts/Inconsolata-LGC-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Inconsolata-LGC-BoldItalic.ttf") format("truetype");
 }
-
 
 /* ### Source Sans 3 */
 
@@ -735,7 +738,9 @@ td {
   font-family: "Source Sans 3";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/source-sans-3-v18-latin-regular.woff2") format("woff2"), url("../fonts/source-sans-3-v18-latin-regular.ttf") format("truetype");
+  src:
+    url("../fonts/source-sans-3-v18-latin-regular.woff2") format("woff2"),
+    url("../fonts/source-sans-3-v18-latin-regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -743,7 +748,9 @@ td {
   font-family: "Source Sans 3";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/source-sans-3-v18-latin-italic.woff2") format("woff2"), url("../fonts/source-sans-3-v18-latin-italic.ttf") format("truetype");
+  src:
+    url("../fonts/source-sans-3-v18-latin-italic.woff2") format("woff2"),
+    url("../fonts/source-sans-3-v18-latin-italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -751,7 +758,9 @@ td {
   font-family: "Source Sans 3";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/source-sans-3-v18-latin-700.woff2") format("woff2"), url("../fonts/source-sans-3-v18-latin-700.ttf") format("truetype");
+  src:
+    url("../fonts/source-sans-3-v18-latin-700.woff2") format("woff2"),
+    url("../fonts/source-sans-3-v18-latin-700.ttf") format("truetype");
 }
 
 @font-face {
@@ -759,9 +768,10 @@ td {
   font-family: "Source Sans 3";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/source-sans-3-v18-latin-700italic.woff2") format("woff2"), url("../fonts/source-sans-3-v18-latin-700italic.ttf") format("truetype");
+  src:
+    url("../fonts/source-sans-3-v18-latin-700italic.woff2") format("woff2"),
+    url("../fonts/source-sans-3-v18-latin-700italic.ttf") format("truetype");
 }
-
 
 /* ### Source Serif 4 */
 
@@ -770,7 +780,9 @@ td {
   font-family: "Source Serif 4";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/source-serif-4-v13-latin-regular.woff2") format("woff2"), url("../fonts/source-serif-4-v13-latin-regular.ttf") format("truetype");
+  src:
+    url("../fonts/source-serif-4-v13-latin-regular.woff2") format("woff2"),
+    url("../fonts/source-serif-4-v13-latin-regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -778,7 +790,9 @@ td {
   font-family: "Source Serif 4";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/source-serif-4-v13-latin-italic.woff2") format("woff2"), url("../fonts/source-serif-4-v13-latin-italic.ttf") format("truetype");
+  src:
+    url("../fonts/source-serif-4-v13-latin-italic.woff2") format("woff2"),
+    url("../fonts/source-serif-4-v13-latin-italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -786,7 +800,9 @@ td {
   font-family: "Source Serif 4";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/source-serif-4-v13-latin-600.woff2") format("woff2"), url("../fonts/source-serif-4-v13-latin-600.ttf") format("truetype");
+  src:
+    url("../fonts/source-serif-4-v13-latin-600.woff2") format("woff2"),
+    url("../fonts/source-serif-4-v13-latin-600.ttf") format("truetype");
 }
 
 @font-face {
@@ -794,7 +810,9 @@ td {
   font-family: "Source Serif 4";
   font-style: italic;
   font-weight: 600;
-  src: url("../fonts/source-serif-4-v13-latin-600italic.woff2") format("woff2"), url("../fonts/source-serif-4-v13-latin-600italic.ttf") format("truetype");
+  src:
+    url("../fonts/source-serif-4-v13-latin-600italic.woff2") format("woff2"),
+    url("../fonts/source-serif-4-v13-latin-600italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -802,7 +820,9 @@ td {
   font-family: "Source Serif 4";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/source-serif-4-v13-latin-700.woff2") format("woff2"), url("../fonts/source-serif-4-v13-latin-700.ttf") format("truetype");
+  src:
+    url("../fonts/source-serif-4-v13-latin-700.woff2") format("woff2"),
+    url("../fonts/source-serif-4-v13-latin-700.ttf") format("truetype");
 }
 
 @font-face {
@@ -810,5 +830,7 @@ td {
   font-family: "Source Serif 4";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/source-serif-4-v13-latin-700italic.woff2") format("woff2"), url("../fonts/source-serif-4-v13-latin-700italic.ttf") format("truetype");
+  src:
+    url("../fonts/source-serif-4-v13-latin-700italic.woff2") format("woff2"),
+    url("../fonts/source-serif-4-v13-latin-700italic.ttf") format("truetype");
 }
