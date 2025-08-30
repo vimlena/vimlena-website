@@ -7,12 +7,12 @@ let prefersHC = window.matchMedia("(prefers-contrast: more)");
  */
 
 window.onload = function () {
-  if (window.matchMedia && prefersLight.matches && prefersHC.matches) {
-    document.body.classList.add("lightmodehc");
-  }
-  if (window.matchMedia && prefersDark.matches && prefersHC.matches) {
-    document.body.classList.add("darkmodehc");
-  }
+    if (window.matchMedia && prefersLight.matches && prefersHC.matches) {
+        document.body.classList.add("lightmodehc");
+    }
+    if (window.matchMedia && prefersDark.matches && prefersHC.matches) {
+        document.body.classList.add("darkmodehc");
+    }
 };
 /* if user wants a light, high contrast theme
  *     add "lightmodehc" to body

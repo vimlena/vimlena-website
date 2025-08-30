@@ -50,231 +50,223 @@
 /* ## color schemes defined */
 
 @media (prefers-color-scheme: dark) {
-  body {
-    --background-01: #2b303b;
-    --background-02: #343d46;
-    --background-03: #4f5b66;
+    body {
+        --background-01: #2b303b;
+        --background-02: #343d46;
+        --background-03: #4f5b66;
+        --text-01: #a7adba;
+        --text-02: #c0c5ce;
+        --text-03: #dfe1e8;
+        --text-04: #eff1f5;
+        --red: #bf616a;
+        --orange: #d08770;
+        --yellow: #ebcb8b;
+        --green: #a3be8c;
+        --blue-01: #96b5b4;
+        --blue-02: #8fa1b3;
+        --purple: #b48ead;
+        --brown: #ab7967;
+    }
+
+    #nav-home-icon {
+        content: url("https://vimlena.com/img/icons/home-light.svg");
+    }
+
+    #nav-posts-icon {
+        content: url("https://vimlena.com/img/icons/document-light.svg");
+    }
+
+    #nav-about-icon {
+        content: url("https://vimlena.com/img/icons/user-light.svg");
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --background-01: #ffffff;
+        --background-02: #f1f1f1;
+        --background-03: #e1e4e8;
+        --text-01: #919aa1;
+        --text-02: #6a737d;
+        --text-03: #454545;
+        --text-04: #2f363d;
+        --red: #a31f2f;
+        --orange: #e36209;
+        --yellow: #fffbc4;
+        --green: #22863a;
+        --blue-01: #008abd;
+        --blue-02: #005b80;
+        --purple: #663fac;
+        --brown: #cc6d00;
+    }
+
+    #nav-home-icon {
+        content: url("https://vimlena.com/img/icons/home-dark.svg");
+    }
+
+    #nav-posts-icon {
+        content: url("https://vimlena.com/img/icons/document-dark.svg");
+    }
+
+    #nav-about-icon {
+        content: url("https://vimlena.com/img/icons/user-dark.svg");
+    }
+}
+
+body.lightmodehc {
+    --background-01: #ffffff;
+    --background-02: #f1f4f4;
+    --background-03: #e1e4e8;
+    --text-01: #4b5458;
+    --text-02: #454545;
+    --text-03: #2f363d;
+    --text-04: #272e34;
+    --red: #9f1e2d;
+    --orange: #893a06;
+    --yellow: #575100;
+    --green: #185d27;
+    --blue-01: #005675;
+    --blue-02: #00405c;
+    --purple: #5f3ba0;
+    --brown: #7a4100;
+
+    #nav-home-icon {
+        content: url("https://vimlena.com/img/icons/home-dark.svg");
+    }
+
+    #nav-posts-icon {
+        content: url("https://vimlena.com/img/icons/document-dark.svg");
+    }
+
+    #nav-about-icon {
+        content: url("https://vimlena.com/img/icons/user-dark.svg");
+    }
+}
+
+body.darkmodehc {
+    --background-01: #000000;
+    --background-02: #1f2129;
+    --background-03: #2b2d3b;
     --text-01: #a7adba;
     --text-02: #c0c5ce;
     --text-03: #dfe1e8;
     --text-04: #eff1f5;
-    --red: #bf616a;
-    --orange: #d08770;
+    --red: #d79da3;
+    --orange: #da9e8b;
     --yellow: #ebcb8b;
     --green: #a3be8c;
     --blue-01: #96b5b4;
-    --blue-02: #8fa1b3;
-    --purple: #b48ead;
-    --brown: #ab7967;
-  }
-
-  #nav-home-icon {
-    content: url("https://vimlena.com/img/icons/home-light.svg");
-  }
-
-  #nav-posts-icon {
-    content: url("https://vimlena.com/img/icons/document-light.svg");
-  }
-
-  #nav-about-icon {
-    content: url("https://vimlena.com/img/icons/user-light.svg");
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    --background-01: #ffffff;
-    --background-02: #f1f1f1;
-    --background-03: #e1e4e8;
-    --text-01: #919aa1;
-    --text-02: #6a737d;
-    --text-03: #454545;
-    --text-04: #2f363d;
-    --red: #a31f2f;
-    --orange: #e36209;
-    --yellow: #fffbc4;
-    --green: #22863a;
-    --blue-01: #008abd;
-    --blue-02: #005b80;
-    --purple: #663fac;
-    --brown: #cc6d00;
-  }
-
-  #nav-home-icon {
-    content: url("https://vimlena.com/img/icons/home-dark.svg");
-  }
-
-  #nav-posts-icon {
-    content: url("https://vimlena.com/img/icons/document-dark.svg");
-  }
-
-  #nav-about-icon {
-    content: url("https://vimlena.com/img/icons/user-dark.svg");
-  }
-}
-
-body.lightmodehc {
-  --background-01: #ffffff;
-  --background-02: #f1f4f4;
-  --background-03: #e1e4e8;
-  --text-01: #4b5458;
-  --text-02: #454545;
-  --text-03: #2f363d;
-  --text-04: #272e34;
-  --red: #9f1e2d;
-  --orange: #893a06;
-  --yellow: #575100;
-  --green: #185d27;
-  --blue-01: #005675;
-  --blue-02: #00405c;
-  --purple: #5f3ba0;
-  --brown: #7a4100;
-
-  #nav-home-icon {
-    content: url("https://vimlena.com/img/icons/home-dark.svg");
-  }
-
-  #nav-posts-icon {
-    content: url("https://vimlena.com/img/icons/document-dark.svg");
-  }
-
-  #nav-about-icon {
-    content: url("https://vimlena.com/img/icons/user-dark.svg");
-  }
-}
-
-body.darkmodehc {
-  --background-01: #000000;
-  --background-02: #1f2129;
-  --background-03: #2b2d3b;
-  --text-01: #a7adba;
-  --text-02: #c0c5ce;
-  --text-03: #dfe1e8;
-  --text-04: #eff1f5;
-  --red: #d79da3;
-  --orange: #da9e8b;
-  --yellow: #ebcb8b;
-  --green: #a3be8c;
-  --blue-01: #96b5b4;
-  --blue-02: #a1acbf;
-  --purple: #c2a3bb;
-  --brown: #c7a699;
+    --blue-02: #a1acbf;
+    --purple: #c2a3bb;
+    --brown: #c7a699;
 }
 
 /* ## Basic Formatting */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background-02);
-  color: var(--text-03);
-  font-family:
-    "Source Sans 3",
-    -apple-system,
-    BlinkMacSystemFont,
-    Inter,
-    "Helvetica Neue",
-    Roboto,
-    Calibri,
-    "Segoe UI",
-    sans-serif;
-  font-kerning: normal;
-  font-size: 1.1rem;
-  font-variant-ligatures: normal;
-  hyphens: none;
-  line-height: 1.45;
-  margin: 0 auto;
-  max-width: 36rem;
-  padding: 1rem;
-  text-rendering: auto;
-  word-wrap: break-word;
+    background-color: var(--background-02);
+    color: var(--text-03);
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, Inter,
+        "Helvetica Neue", Roboto, Calibri, "Segoe UI", sans-serif;
+    font-kerning: normal;
+    font-size: 1.1rem;
+    font-variant-ligatures: normal;
+    hyphens: none;
+    line-height: 1.45;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 1rem;
+    text-rendering: auto;
+    word-wrap: break-word;
 }
 
 @media print {
-  body {
-    background-color: transparent;
-    color: var(--text-02);
-    font-size: 1.1rem;
-  }
+    body {
+        background-color: transparent;
+        color: var(--text-02);
+        font-size: 1.1rem;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
 
-  h2,
-  h3,
-  h4 {
-    page-break-after: avoid;
-  }
+    h2,
+    h3,
+    h4 {
+        page-break-after: avoid;
+    }
 }
 
 p {
-  margin: 1rem 0rem;
+    margin: 1rem 0rem;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 figure {
-  background-color: var(--background-01);
-  border-radius: 0.625rem;
-  margin: 0rem;
-  padding: 0.5rem;
+    background-color: var(--background-01);
+    border-radius: 0.625rem;
+    margin: 0rem;
+    padding: 0.5rem;
 }
 
 blockquote {
-  border-left: 1px solid var(--text-01);
-  color: var(--text-03);
-  margin: 0.5rem 0rem 0.5rem 1rem;
-  padding-left: 0.5rem;
+    border-left: 1px solid var(--text-01);
+    color: var(--text-03);
+    margin: 0.5rem 0rem 0.5rem 1rem;
+    padding-left: 0.5rem;
 }
 
 hr {
-  color: var(--text-02);
+    color: var(--text-02);
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
 }
 
 .column {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
 }
 
 .hanging-indent {
-  margin-left: 1.5rem;
-  text-indent: -1.5rem;
+    margin-left: 1.5rem;
+    text-indent: -1.5rem;
 }
 
 .small-caps {
-  font-variant: small-caps;
+    font-variant: small-caps;
 }
 
 .task-list {
-  list-style: none;
+    list-style: none;
 }
 
 .underline {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #mastodon-verification {
-  display: none;
+    display: none;
 }
 
 /* ## Headings & Header */
 
 header {
-  margin-bottom: 4rem;
-  text-align: center;
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 h1,
@@ -283,125 +275,118 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--text-04);
-  font-family: "Source Serif 4", Palatino, Georgia, Times, serif;
-  font-weight: 600;
-  padding-top: 1rem;
+    color: var(--text-04);
+    font-family: "Source Serif 4", Palatino, Georgia, Times, serif;
+    font-weight: 600;
+    padding-top: 1rem;
 }
 
 #website-title {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h1 {
-  font-size: 1.85rem;
-  text-align: center;
-  margin-block: 0.67em;
+    font-size: 1.85rem;
+    text-align: center;
+    margin-block: 0.67em;
 }
 
 h2 {
-  font-size: 1.65rem;
+    font-size: 1.65rem;
 }
 
 h3 {
-  font-size: 1.45rem;
+    font-size: 1.45rem;
 }
 
 h4 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 h5 {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 h6 {
-  font-size: 1.15rem;
+    font-size: 1.15rem;
 }
 
 /* ## Lists */
 
 ol,
 ul {
-  padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 ul {
-  list-style-type: "-  ";
+    list-style-type: "-  ";
 }
 
 li > ol,
 li > ul {
-  margin-top: 0rem;
+    margin-top: 0rem;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0rem;
+    list-style: none;
+    padding: 0rem;
 }
 
 nav ul li,
 ul.tags-list li {
-  display: inline;
-  font-size: 1.1rem;
-  padding: 0rem 0.45rem 0rem 0.45rem;
-  text-align: center;
+    display: inline;
+    font-size: 1.1rem;
+    padding: 0rem 0.45rem 0rem 0.45rem;
+    text-align: center;
 }
 #TOC {
-  list-style: circle;
+    list-style: circle;
 }
 
 #TOC ul li {
-  display: block;
-  text-align: left;
+    display: block;
+    text-align: left;
 }
 
 ul#social-links {
-  list-style: none;
-  padding: 0rem;
-  text-align: center;
+    list-style: none;
+    padding: 0rem;
+    text-align: center;
 }
 
 ul#social-links li {
-  display: inline;
-  padding: 0px 0.2rem 0px 0.2rem;
+    display: inline;
+    padding: 0px 0.2rem 0px 0.2rem;
 }
 
 .post-tag {
-  font-family:
-    "Source Sans 3",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    Calibri,
-    Roboto,
-    "Segoe UI",
-    sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", Calibri, Roboto, "Segoe UI", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 ul.tags-list {
-  list-style: none;
+    list-style: none;
 }
 
 /* ## Links */
 
 a:link {
-  color: var(--blue-02);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+    color: var(--blue-02);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 a:visited {
-  color: var(--purple);
+    color: var(--purple);
 }
 
 a:focus,
 a:hover,
 a:active {
-  color: var(--red);
+    color: var(--red);
 }
 
 header a:link,
@@ -410,12 +395,12 @@ header a:visited,
 header a:focus,
 header a:hover,
 header a:active {
-  text-decoration: none;
-  color: var(--text-04);
+    text-decoration: none;
+    color: var(--text-04);
 }
 
 .tags-list li a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .back-to-top:link,
@@ -423,8 +408,8 @@ header a:active {
 .back-to-top:focus,
 .back-to-top:hover,
 .back-to-top:active {
-  color: var(--blue-01);
-  text-decoration: none;
+    color: var(--blue-01);
+    text-decoration: none;
 }
 
 /* ## Code & Pre-formatted Text
@@ -463,137 +448,136 @@ header a:active {
  */
 
 code {
-  white-space: pre-wrap;
+    white-space: pre-wrap;
 }
 
 code,
 pre {
-  background-color: var(--background-01);
-  border-radius: 0.4rem;
-  color: var(--text-02);
-  font-family:
-    "Incolsolata LGC", "Inconsolata", "SFMono-Regular", Consolas, Menlo,
-    "Liberation Mono", monospace;
-  font-size: 0.9rem;
-  margin: 0;
-  padding: 0.15rem;
+    background-color: var(--background-01);
+    border-radius: 0.4rem;
+    color: var(--text-02);
+    font-family: "Incolsolata LGC", "Inconsolata", "SFMono-Regular", Consolas,
+        Menlo, "Liberation Mono", monospace;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0.15rem;
 }
 
 pre {
-  margin: 1rem 0;
-  overflow: auto;
-  padding: 0.15rem;
+    margin: 1rem 0;
+    overflow: auto;
+    padding: 0.15rem;
 }
 
 pre code {
-  overflow: visible;
-  overflow-wrap: normal;
+    overflow: visible;
+    overflow-wrap: normal;
 }
 
 .sourceCode {
-  background-color: var(--background-01);
-  border-radius: 0.6rem;
-  overflow: visible;
-  padding: 0.15rem;
+    background-color: var(--background-01);
+    border-radius: 0.6rem;
+    overflow: visible;
+    padding: 0.15rem;
 }
 
 pre > code.sourceCode {
-  position: relative;
-  white-space: pre;
+    position: relative;
+    white-space: pre;
 }
 
 pre > code.sourceCode > span {
-  display: inline-block;
-  line-height: 1.5;
+    display: inline-block;
+    line-height: 1.5;
 }
 
 pre > code.sourceCode > span:empty {
-  height: 1.2rem;
+    height: 1.2rem;
 }
 
 code.sourceCode > span {
-  color: inherit;
-  text-decoration: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 div.sourceCode {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 pre.sourceCode {
-  margin: 0rem;
+    margin: 0rem;
 }
 
 @media screen {
-  div.sourceCode {
-    overflow: auto;
-  }
+    div.sourceCode {
+        overflow: auto;
+    }
 }
 
 @media print {
-  pre > code.sourceCode {
-    white-space: pre-wrap;
-  }
+    pre > code.sourceCode {
+        white-space: pre-wrap;
+    }
 
-  pre > code.sourceCode > span {
-    text-indent: -4rem;
-    padding-left: 4rem;
-  }
+    pre > code.sourceCode > span {
+        text-indent: -4rem;
+        padding-left: 4rem;
+    }
 }
 
 pre.numberSource code {
-  counter-reset: source-line 0;
+    counter-reset: source-line 0;
 }
 
 pre.numberSource code > span {
-  counter-increment: source-line;
-  left: -3rem;
-  position: relative;
+    counter-increment: source-line;
+    left: -3rem;
+    position: relative;
 }
 
 pre.numberSource code > span > a:first-child::before {
-  border: none;
-  color: var(--background-01);
-  content: counter(source-line);
-  display: inline-block;
-  left: -1rem;
-  padding: 0 4px;
-  position: relative;
-  text-align: right;
-  user-select: none;
-  vertical-align: baseline;
-  width: 3rem;
+    border: none;
+    color: var(--background-01);
+    content: counter(source-line);
+    display: inline-block;
+    left: -1rem;
+    padding: 0 4px;
+    position: relative;
+    text-align: right;
+    user-select: none;
+    vertical-align: baseline;
+    width: 3rem;
 }
 
 pre.numberSource {
-  border-left: 0.06rem solid var(--background-01);
-  margin-left: 2rem;
-  padding-left: 0.25rem;
+    border-left: 0.06rem solid var(--background-01);
+    margin-left: 2rem;
+    padding-left: 0.25rem;
 }
 
 @media screen {
-  pre > code.sourceCode > span > a:first-child::before {
-    text-decoration: underline;
-  }
+    pre > code.sourceCode > span > a:first-child::before {
+        text-decoration: underline;
+    }
 }
 
 code span.kw {
-  color: var(--text-03);
-  font-weight: bold;
+    color: var(--text-03);
+    font-weight: bold;
 }
 
 code span.al,
 code span.er {
-  color: var(--red);
-  font-weight: bold;
+    color: var(--red);
+    font-weight: bold;
 }
 
 code span.an,
 code span.cv,
 code span.in {
-  color: var(--blue-01);
-  font-weight: bold;
-  font-style: italic;
+    color: var(--blue-01);
+    font-weight: bold;
+    font-style: italic;
 }
 
 code span.at,
@@ -601,93 +585,93 @@ code span.bn,
 code span.dv,
 code span.fl,
 code span.st {
-  color: var(--green);
+    color: var(--green);
 }
 
 code span.ot {
-  color: var(--yellow);
+    color: var(--yellow);
 }
 
 code span.cf,
 code span.im {
-  color: var(--purple);
-  font-weight: bold;
+    color: var(--purple);
+    font-weight: bold;
 }
 
 code span.ch,
 code span.va {
-  color: var(--blue-02);
+    color: var(--blue-02);
 }
 
 code span.fu {
-  color: var(--orange);
+    color: var(--orange);
 }
 
 code span.cn,
 code span.dt {
-  color: var(--red);
+    color: var(--red);
 }
 
 code span.co {
-  color: var(--text-01);
+    color: var(--text-01);
 }
 
 code span.do {
-  color: var(--red);
-  font-style: italic;
+    color: var(--red);
+    font-style: italic;
 }
 
 code span.op {
-  color: var(--text-02);
+    color: var(--text-02);
 }
 
 code span.pp {
-  color: var(--brown);
+    color: var(--brown);
 }
 
 code span.sc,
 code span.vs {
-  color: var(--blue-01);
+    color: var(--blue-01);
 }
 
 code span.ss,
 code span.bu {
-  color: var(--purple);
+    color: var(--purple);
 }
 
 code span.wa {
-  color: var(--orange);
-  font-weight: bold;
+    color: var(--orange);
+    font-weight: bold;
 }
 
 /* ## Tables */
 
 table {
-  border-collapse: collapse;
-  display: block;
-  font-variant-numeric: lining-nums tabular-nums;
-  margin: 0.8rem 0;
-  overflow-x: auto;
-  width: 100%;
+    border-collapse: collapse;
+    display: block;
+    font-variant-numeric: lining-nums tabular-nums;
+    margin: 0.8rem 0;
+    overflow-x: auto;
+    width: 100%;
 }
 
 table caption {
-  margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 tbody {
-  border-bottom: 0.06rem solid var(--text-01);
-  border-top: 0.06rem solid var(--text-01);
-  margin-top: 0.5rem;
+    border-bottom: 0.06rem solid var(--text-01);
+    border-top: 0.06rem solid var(--text-01);
+    margin-top: 0.5rem;
 }
 
 th {
-  border-top: 0.06rem solid var(--text-01);
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-top: 0.06rem solid var(--text-01);
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
 td {
-  padding: 0.125rem 0.5rem 0.25rem 0.5rem;
+    padding: 0.125rem 0.5rem 0.25rem 0.5rem;
 }
 
 /* ## @font-face imports
@@ -700,145 +684,135 @@ td {
 /* ### Inconsolata LGC */
 
 @font-face {
-  font-display: swap;
-  font-family: "Inconsolata LGC";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("../fonts/Inconsolata-LGC.woff2") format("woff2"),
-    url("../fonts/Inconsolata-LGC.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Inconsolata LGC";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Inconsolata-LGC.woff2") format("woff2"),
+        url("../fonts/Inconsolata-LGC.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Inconsolata LGC";
-  font-style: italic;
-  font-weight: 400;
-  src:
-    url("../fonts/Inconsolata-LGC-Italic.woff2") format("woff2"),
-    url("../fonts/Inconsolata-LGC-Italic.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Inconsolata LGC";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/Inconsolata-LGC-Italic.woff2") format("woff2"),
+        url("../fonts/Inconsolata-LGC-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Inconsolata LGC";
-  font-style: normal;
-  font-weight: 700;
-  src:
-    url("../fonts/Inconsolata-LGC-Bold.woff2") format("woff2"),
-    url("../fonts/Inconsolata-LGC-Bold.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Inconsolata LGC";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Inconsolata-LGC-Bold.woff2") format("woff2"),
+        url("../fonts/Inconsolata-LGC-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Inconsolata LGC";
-  font-style: italic;
-  font-weight: 700;
-  src:
-    url("../fonts/Inconsolata-LGC-BoldItalic.woff2") format("woff2"),
-    url("../fonts/Inconsolata-LGC-BoldItalic.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Inconsolata LGC";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/Inconsolata-LGC-BoldItalic.woff2") format("woff2"),
+        url("../fonts/Inconsolata-LGC-BoldItalic.ttf") format("truetype");
 }
 
 /* ### Source Sans 3 */
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Sans 3";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("../fonts/source-sans-3-v18-latin-regular.woff2") format("woff2"),
-    url("../fonts/source-sans-3-v18-latin-regular.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/source-sans-3-v18-latin-regular.woff2") format("woff2"),
+        url("../fonts/source-sans-3-v18-latin-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Sans 3";
-  font-style: italic;
-  font-weight: 400;
-  src:
-    url("../fonts/source-sans-3-v18-latin-italic.woff2") format("woff2"),
-    url("../fonts/source-sans-3-v18-latin-italic.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Sans 3";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/source-sans-3-v18-latin-italic.woff2") format("woff2"),
+        url("../fonts/source-sans-3-v18-latin-italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Sans 3";
-  font-style: normal;
-  font-weight: 700;
-  src:
-    url("../fonts/source-sans-3-v18-latin-700.woff2") format("woff2"),
-    url("../fonts/source-sans-3-v18-latin-700.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/source-sans-3-v18-latin-700.woff2") format("woff2"),
+        url("../fonts/source-sans-3-v18-latin-700.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Sans 3";
-  font-style: italic;
-  font-weight: 700;
-  src:
-    url("../fonts/source-sans-3-v18-latin-700italic.woff2") format("woff2"),
-    url("../fonts/source-sans-3-v18-latin-700italic.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Sans 3";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/source-sans-3-v18-latin-700italic.woff2") format("woff2"),
+        url("../fonts/source-sans-3-v18-latin-700italic.ttf") format("truetype");
 }
 
 /* ### Source Serif 4 */
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Serif 4";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("../fonts/source-serif-4-v13-latin-regular.woff2") format("woff2"),
-    url("../fonts/source-serif-4-v13-latin-regular.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Serif 4";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/source-serif-4-v13-latin-regular.woff2") format("woff2"),
+        url("../fonts/source-serif-4-v13-latin-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Serif 4";
-  font-style: italic;
-  font-weight: 400;
-  src:
-    url("../fonts/source-serif-4-v13-latin-italic.woff2") format("woff2"),
-    url("../fonts/source-serif-4-v13-latin-italic.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Serif 4";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/source-serif-4-v13-latin-italic.woff2") format("woff2"),
+        url("../fonts/source-serif-4-v13-latin-italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Serif 4";
-  font-style: normal;
-  font-weight: 600;
-  src:
-    url("../fonts/source-serif-4-v13-latin-600.woff2") format("woff2"),
-    url("../fonts/source-serif-4-v13-latin-600.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Serif 4";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/source-serif-4-v13-latin-600.woff2") format("woff2"),
+        url("../fonts/source-serif-4-v13-latin-600.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Serif 4";
-  font-style: italic;
-  font-weight: 600;
-  src:
-    url("../fonts/source-serif-4-v13-latin-600italic.woff2") format("woff2"),
-    url("../fonts/source-serif-4-v13-latin-600italic.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Serif 4";
+    font-style: italic;
+    font-weight: 600;
+    src: url("../fonts/source-serif-4-v13-latin-600italic.woff2")
+            format("woff2"),
+        url("../fonts/source-serif-4-v13-latin-600italic.ttf")
+            format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Serif 4";
-  font-style: normal;
-  font-weight: 700;
-  src:
-    url("../fonts/source-serif-4-v13-latin-700.woff2") format("woff2"),
-    url("../fonts/source-serif-4-v13-latin-700.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Serif 4";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/source-serif-4-v13-latin-700.woff2") format("woff2"),
+        url("../fonts/source-serif-4-v13-latin-700.ttf") format("truetype");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Source Serif 4";
-  font-style: italic;
-  font-weight: 700;
-  src:
-    url("../fonts/source-serif-4-v13-latin-700italic.woff2") format("woff2"),
-    url("../fonts/source-serif-4-v13-latin-700italic.ttf") format("truetype");
+    font-display: swap;
+    font-family: "Source Serif 4";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/source-serif-4-v13-latin-700italic.woff2")
+            format("woff2"),
+        url("../fonts/source-serif-4-v13-latin-700italic.ttf")
+            format("truetype");
 }
