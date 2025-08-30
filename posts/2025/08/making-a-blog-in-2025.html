@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark light">
-  <!-- title & properties -->
-  <title>Making A Blog In 2025 / Anthophorism</title>
-  <meta property="og:title" content="Making A Blog In 2025 / Anthophorism">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vimlena.com/posts/2025/08/making-a-blog-in-2025.html">
-  <meta property="og:description" content="Intent, code, and design behind Anthophorism.">
-  <meta name="description" content="Intent, code, and design behind Anthophorism.">
-  <meta property="og:image" content="https://vimlena.com/img/2025/08/typefaces.jpg">
-  <meta name="fediverse:creator" content="@vimlena@mastodon.social">
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="../../../img/favicon/site.webmanifest">
-  <!-- css -->
-  <link href="../../../css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-  <link href="../../../css/making-a-blog-in-2025-custom.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <!-- title & properties -->
+    <title>Making A Blog In 2025 / Anthophorism</title>
+    <meta property="og:title" content="Making A Blog In 2025 / Anthophorism">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vimlena.com/posts/2025/08/making-a-blog-in-2025.html">
+    <meta property="og:description" content="Intent, code, and design behind Anthophorism.">
+    <meta name="description" content="Intent, code, and design behind Anthophorism.">
+    <meta property="og:image" content="https://vimlena.com/img/2025/08/typefaces.jpg">
+    <meta name="fediverse:creator" content="@vimlena@mastodon.social">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../../img/favicon/site.webmanifest">
+    <!-- css -->
+    <link href="../../../css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../../css/making-a-blog-in-2025-custom.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
@@ -93,6 +94,9 @@
             To convert my plain text markdown files into usable HTML, I use <a href="https://pandoc.org/">Pandoc</a> which is a simple terminal-based program that converts document formats into other document formats. Pandoc has a ton of really useful features and it’s probably one of my favorite utilities I’ve ever used. Once I have a HTML file, I copy/paste the HTML onto a blank webpage template I built for the website and it’s good to go live after I check that everything rendered right.
         </p>
         <h3>Colors, Contrast, and Icons</h3>
+        <p>
+            <strong>Edit:</strong> please see <a href="#footnote-02">the footnote</a>, not all of this code is currently active but I’m keeping the following section intact for posterity.
+        </p>
         <p>
             I tried my best to balance visually pleasing/pleasant colors that were still accessible. I pulled the colors I used for the default dark theme from <a href="https://github.com/chriskempson/base16-default-schemes/tree/master">Chris Kempson’s base16 colorschemes</a>, specifically one I really like called “ocean” which has good contrast and a cool background color. I defaulted to this theme because I personally prefer dark themes with light text. Next, I workshopped a few different light themes but decided to use <a href="https://github.com/vallyscode/cloud-vscode-theme/tree/main">Valerii Lysenko’s “cloud” color scheme designed for VS Code</a> because thought it looked nice with decent contrast and good colors. I tried implementing a theme switcher GUI but decided it would just be easier to detect whether the user has a preference based on the device they’re viewing utilizing the <code>prefers-color-scheme</code> CSS media feature (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">read about that here</a>).
         </p>
@@ -211,7 +215,7 @@
   <span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
         </div>
         <p>
-            The <code>&lt;body&gt;</code> element is dynamically updated when the site loads by a short JavaScript file as well. Because I wasn’t able to figure out how to nest <code>prefers-contrast</code> and <code>prefers-color-scheme</code> queries in CSS, I added a separate <code>.lightmodehc</code> and <code>.darkmodehc</code> class to the <code>&lt;body&gt;</code> which gets added by JavaScript based on what it detects from the user. Here’s what the JavaScript looks like (<a href="https://github.com/vimlena/vimlena-website/blob/main/js/light-dark-switch.js">GitHub link</a>):
+            The <code>&lt;body&gt;</code> element is dynamically updated when the site loads by a short JavaScript file as well. Because I wasn’t able to figure out how to nest <code>prefers-contrast</code> and <code>prefers-color-scheme</code> queries in CSS, I added a separate <code>.lightmodehc</code> and <code>.darkmodehc</code> class to the <code>&lt;body&gt;</code> which gets added by JavaScript based on what it detects from the user. Here’s what the JavaScript looks like:
         </p>
         <div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> prefersLight <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="fu">matchMedia</span>(<span class="st">&quot;(prefers-color-scheme: light)&quot;</span>)<span class="op">;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> prefersDark <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="fu">matchMedia</span>(<span class="st">&quot;(prefers-color-scheme: dark)&quot;</span>)<span class="op">;</span></span>
@@ -262,10 +266,10 @@
             </figcaption>
         </figure>
         <p>
-            I tested using the popular web font service Google Fonts for bring my specific typeface preferences to the website but it served to slow down the loading time too much and also I don’t want to subject people who view the site to Google’s analytics or potentially have the font files change or be unavailable if Google modified or deleted the files they use. I considered just using common operating system fonts but I didn’t really like how they looked and wanted it to be consistent across platforms. So I tested just loading the fonts onto the web server and calling them using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">CSS <code>@font-face</code> rule</a> and it actually loaded quite fast so it seemed like the way to do.
+            I tested using the popular web font service Google Fonts for bring my specific typeface preferences to the website but it slowed down the loading time too much. Also I don’t want to subject people who view the site to Google’s analytics or potentially have the font files change or be unavailable if Google modified or deleted the files they use. I considered just using common operating system fonts but I didn’t really like how they looked and wanted it to be consistent across platforms. So I tested just loading the fonts onto the web server and calling them using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">CSS <code>@font-face</code> rule</a> and it actually loaded quite fast so it seemed like the way to do.
         </p>
         <p>
-            I intentionally made the maximum width of this blog to be 38 rem (or about 608 pixels if you’re using the default 16 pixel font size) so that the average line length doesn’t exceed 90 characters, <a href="https://practicaltypography.com/line-length.html">the upward limit for comfortable reading</a>. If your line length is too long, your eyes have to travel too far to find the start of the next line and it’s more visually tiring. I set the default line spacing to be 1.7 (1 is single-spaced and 2 is double-spaced) for the sake of increased legibility and comfort. I also primarily use rem instead of pixels, em, percentages, or the other stuff out there <a href="https://www.freecodecamp.org/news/css-units-when-to-use-each-one/">because it scales well based on the user’s text size preference</a> which makes it more accessible if a user prefers larger text.
+            I made the maximum width of this blog to be 36 rem (or about 576 pixels if you’re using the default 16 pixel font size) so that the average line length doesn’t exceed 90 characters, <a href="https://practicaltypography.com/line-length.html">the upward limit for comfortable reading</a>. If your line length is too long, your eyes have to travel too far to find the start of the next line and it’s more visually tiring. I set the default line spacing to be 1.7 (1 is single-spaced and 2 is double-spaced) for the sake of increased legibility and comfort. I also primarily use rem instead of pixels, em, percentages, or the other stuff out there <a href="https://www.freecodecamp.org/news/css-units-when-to-use-each-one/">because it scales well based on the user’s text size preference</a> which makes it more accessible if a user prefers larger text.
         </p>
         <h2>Conclusion</h2>
         <p>
@@ -274,6 +278,9 @@
         <hr>
         <p>
             <strong>Edit on <time datetime="2025-08-15">August 15, 2025</time>:</strong> I felt that this article could benefit from more images to show what I am talking about so I added a comparison of Markdown text and HTML code, pictures of the the stock color schemes that inspired the ones this website uses, some pictures of elementary OS icons, and a comparison of how the various dark, high contrast dark, light, and high contrast light color schemes look on the blog. Also made it so that if you click or tap on images, they open with full resolution in a new tab so you can view the details.
+        </p>
+        <p id="footnote-02">
+            <strong>Edit on <time datetime="2025-08-30">August 30, 2025</time>:</strong> I actually opted to change the theme used on this website to the <a href="https://catppuccin.com/palette/#flavor-latte">Latte (light)</a> and <a href="https://catppuccin.com/palette/#flavor-macchiato">Macchiato (dark)</a> variants of the <a href="https://catppuccin.com/">Catppuccin theme</a>. I also removed the JavaScript theme switcher and just opted to have the default dark and light themes be accessible in their contrast because four color schemes felt a bit unnecessary to me. If you want to view the new CSS code, it’s <a href="https://github.com/vimlena/vimlena-website/blob/main/css/stylesheet.css">on my GitHub</a> or you can view the <a href="https://vimlena.com/css/stylesheet.css">current raw CSS file directly</a>.
         </p>
     </article>
     <footer>
@@ -287,4 +294,5 @@
         </p>
     </footer>
 </body>
+
 </html>
