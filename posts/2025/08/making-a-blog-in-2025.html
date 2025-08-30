@@ -74,6 +74,9 @@
         </p>
         <h2>Design and Coding</h2>
         <p>
+            <strong>Edit:</strong> please see <a href="#footnote-02">the footnote</a>, not all of this code or design work is currently active but I’m keeping the following section intact for posterity.
+        </p>
+        <p>
             I didn’t have an extremely solid idea exactly what I wanted to do with this website before I started making it. I have always been sort of a computer nerd and would do things like bringing my laptop to school with me so that I could make little silly programs and tweak my Linux install rather than doing schoolwork. Before I had a computer to myself and access to the internet, I would spend hours adjusting different settings on my family’s Windows 95 (and later XP) install. Messing around with a technology and seeing what happens is part of the fun for me, I think being too deterministic about design or even purpose can get in the way of exploration and play leads to new ideas and approaches.
         </p>
         <p>
@@ -94,9 +97,6 @@
             To convert my plain text markdown files into usable HTML, I use <a href="https://pandoc.org/">Pandoc</a> which is a simple terminal-based program that converts document formats into other document formats. Pandoc has a ton of really useful features and it’s probably one of my favorite utilities I’ve ever used. Once I have a HTML file, I copy/paste the HTML onto a blank webpage template I built for the website and it’s good to go live after I check that everything rendered right.
         </p>
         <h3>Colors, Contrast, and Icons</h3>
-        <p>
-            <strong>Edit:</strong> please see <a href="#footnote-02">the footnote</a>, not all of this code is currently active but I’m keeping the following section intact for posterity.
-        </p>
         <p>
             I tried my best to balance visually pleasing/pleasant colors that were still accessible. I pulled the colors I used for the default dark theme from <a href="https://github.com/chriskempson/base16-default-schemes/tree/master">Chris Kempson’s base16 colorschemes</a>, specifically one I really like called “ocean” which has good contrast and a cool background color. I defaulted to this theme because I personally prefer dark themes with light text. Next, I workshopped a few different light themes but decided to use <a href="https://github.com/vallyscode/cloud-vscode-theme/tree/main">Valerii Lysenko’s “cloud” color scheme designed for VS Code</a> because thought it looked nice with decent contrast and good colors. I tried implementing a theme switcher GUI but decided it would just be easier to detect whether the user has a preference based on the device they’re viewing utilizing the <code>prefers-color-scheme</code> CSS media feature (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">read about that here</a>).
         </p>
