@@ -108,7 +108,7 @@
 body {
     background-color: var(--background-02);
     color: var(--text-03);
-    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, Inter,
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, Inter,
         "Helvetica Neue", Roboto, Calibri, "Segoe UI", sans-serif;
     font-kerning: normal;
     font-size: 1.1rem;
@@ -116,7 +116,7 @@ body {
     hyphens: none;
     line-height: 1.45;
     margin: 0 auto;
-    max-width: 36rem;
+    max-width: 38rem;
     padding: 1rem;
     text-rendering: auto;
     word-wrap: break-word;
@@ -184,20 +184,12 @@ address {
     text-indent: -1.5rem;
 }
 
-.small-caps {
-    font-variant: small-caps;
-}
-
 .task-list {
     list-style: none;
 }
 
 .underline {
     text-decoration: underline;
-}
-
-#mastodon-verification {
-    display: none;
 }
 
 /* ## Headings & Header */
@@ -214,7 +206,7 @@ h4,
 h5,
 h6 {
     color: var(--text-04);
-    font-family: "Source Serif 4", Palatino, Georgia, Times, serif;
+    font-family: "IBM Plex Serif", Palatino, Georgia, Times, serif;
     font-weight: 600;
     padding-top: 1rem;
 }
@@ -298,7 +290,7 @@ ul#social-links li {
 }
 
 .post-tag {
-    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont,
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
         "Helvetica Neue", Calibri, Roboto, "Segoe UI", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -394,9 +386,9 @@ pre {
     background-color: var(--background-01);
     border-radius: 0.4rem;
     color: var(--text-02);
-    font-family: "Incolsolata LGC", "Inconsolata", "SFMono-Regular", Consolas,
-        Menlo, "Liberation Mono", monospace;
-    font-size: 0.9rem;
+    font-family: "IBM Plex Mono", "Inconsolata LGC", "Inconsolata",
+        "SFMono-Regular", Consolas, Menlo, "Liberation Mono", monospace;
+    font-size: 0.75rem;
     margin: 0;
     padding: 0.15rem;
 }
@@ -619,138 +611,88 @@ td {
  * having issues rendering woff2 for some reason
  */
 
-/* ### Inconsolata LGC */
+/* ### IBM Plex Sans */
 
 @font-face {
     font-display: swap;
-    font-family: "Inconsolata LGC";
+    font-family: "IBM Plex Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/Inconsolata-LGC.woff2") format("woff2"),
-        url("../fonts/Inconsolata-LGC.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-sans-v22-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Inconsolata LGC";
+    font-family: "IBM Plex Sans";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/Inconsolata-LGC-Italic.woff2") format("woff2"),
-        url("../fonts/Inconsolata-LGC-Italic.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-sans-v22-latin-italic.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Inconsolata LGC";
+    font-family: "IBM Plex Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/Inconsolata-LGC-Bold.woff2") format("woff2"),
-        url("../fonts/Inconsolata-LGC-Bold.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-sans-v22-latin-700.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Inconsolata LGC";
+    font-family: "IBM Plex Sans";
     font-style: italic;
     font-weight: 700;
-    src: url("../fonts/Inconsolata-LGC-BoldItalic.woff2") format("woff2"),
-        url("../fonts/Inconsolata-LGC-BoldItalic.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-sans-v22-latin-700italic.woff2") format("woff2");
 }
 
-/* ### Source Sans 3 */
+/* ### IBM Plex Mono */
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/source-sans-3-v18-latin-regular.woff2") format("woff2"),
-        url("../fonts/source-sans-3-v18-latin-regular.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-mono-v19-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "IBM Plex Mono";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/source-sans-3-v18-latin-italic.woff2") format("woff2"),
-        url("../fonts/source-sans-3-v18-latin-italic.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-mono-v19-latin-italic.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/source-sans-3-v18-latin-700.woff2") format("woff2"),
-        url("../fonts/source-sans-3-v18-latin-700.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-mono-v19-latin-700.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "IBM Plex Mono";
     font-style: italic;
     font-weight: 700;
-    src: url("../fonts/source-sans-3-v18-latin-700italic.woff2") format("woff2"),
-        url("../fonts/source-sans-3-v18-latin-700italic.ttf") format("truetype");
+    src: url("../fonts/ibm-plex-mono-v19-latin-700italic.woff2") format("woff2");
 }
 
-/* ### Source Serif 4 */
+/* ### IBM Plex Serif */
 
 @font-face {
-    font-display: swap;
-    font-family: "Source Serif 4";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/source-serif-4-v13-latin-regular.woff2") format("woff2"),
-        url("../fonts/source-serif-4-v13-latin-regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Source Serif 4";
-    font-style: italic;
-    font-weight: 400;
-    src: url("../fonts/source-serif-4-v13-latin-italic.woff2") format("woff2"),
-        url("../fonts/source-serif-4-v13-latin-italic.ttf") format("truetype");
+  font-display: swap;
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-serif-v19-latin-600.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "Source Serif 4";
-    font-style: normal;
-    font-weight: 600;
-    src: url("../fonts/source-serif-4-v13-latin-600.woff2") format("woff2"),
-        url("../fonts/source-serif-4-v13-latin-600.ttf") format("truetype");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Source Serif 4";
-    font-style: italic;
-    font-weight: 600;
-    src: url("../fonts/source-serif-4-v13-latin-600italic.woff2")
-            format("woff2"),
-        url("../fonts/source-serif-4-v13-latin-600italic.ttf")
-            format("truetype");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Source Serif 4";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/source-serif-4-v13-latin-700.woff2") format("woff2"),
-        url("../fonts/source-serif-4-v13-latin-700.ttf") format("truetype");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Source Serif 4";
-    font-style: italic;
-    font-weight: 700;
-    src: url("../fonts/source-serif-4-v13-latin-700italic.woff2")
-            format("woff2"),
-        url("../fonts/source-serif-4-v13-latin-700italic.ttf")
-            format("truetype");
+  font-display: swap;
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-serif-v19-latin-600italic.woff2") format("woff2");
 }
