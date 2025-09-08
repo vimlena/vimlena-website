@@ -1,9 +1,9 @@
 /* # Base stylesheet for vimlena.com
- * 
+ *
  * ## Defining color schemes
- * 
+ *
  * ### `background` and `text` variables
- * 
+ *
  * - `background-0X`: goes from `01` to `03`, incrementing each time it will
  *   have more contrast with the text colors
  * - `text-0X`: goes from `01` to `04`, incrementing each time it will increase
@@ -12,9 +12,9 @@
  * - highest possible contrast is `background-01` and `text-04` becase they are
  *.  the farthest away from each other on the number line; `background-03` and
  *.  `text-01` would be the lowest contrast for the same reason
- * 
+ *
  * ### other color variables
- * 
+ *
  * - most of the other color variables are self-explanatrory, but `blue-0X`
  *   goes from `01` to `02` and increments each time it increases the contrast
  *.  with the background
@@ -24,11 +24,11 @@
  *   markdown to a html file
  *
  * ### Colorscheme sources
- * 
+ *
  * Dark based on Macchiato theme from Catppuccin,
  * Light based on Latte theme from Catppuccin:
  *     https://catppuccin.com/palette/
- * 
+ *
  * this css file uses the `@media (prefers-color-scheme: dark/light)` rule to
  * target the correct color scheme to load correctly.
  */
@@ -36,167 +36,175 @@
 /* ## color schemes defined */
 
 @media (prefers-color-scheme: dark) {
-    body {
-        --background-01: #1e2030;
-        --background-02: #24273a;
-        --background-03: #363a4f;
-        --text-01: #a5adcb;
-        --text-02: #b8c0e0;
-        --text-03: #cad3f5;
-        --text-04: #e1e6f9;
-        --red: #ed8796;
-        --orange: #f5a97f;
-        --yellow: #eed49f;
-        --green: #a6da95;
-        --blue-01: #7dc4e4;
-        --blue-02: #8aadf4;
-        --purple: #c6a0f6;
-        --brown: #f0c6c6;
-    }
+  body {
+    --background-01: #1e2030;
+    --background-02: #24273a;
+    --background-03: #363a4f;
+    --text-01: #a5adcb;
+    --text-02: #b8c0e0;
+    --text-03: #cad3f5;
+    --text-04: #e1e6f9;
+    --red: #ed8796;
+    --orange: #f5a97f;
+    --yellow: #eed49f;
+    --green: #a6da95;
+    --blue-01: #7dc4e4;
+    --blue-02: #8aadf4;
+    --purple: #c6a0f6;
+    --brown: #f0c6c6;
+  }
 
-    #nav-home-icon {
-        content: url("https://vimlena.com/img/icons/home-light.svg");
-    }
+  #nav-home-icon {
+    content: url("https://vimlena.com/img/icons/home-light.svg");
+  }
 
-    #nav-posts-icon {
-        content: url("https://vimlena.com/img/icons/document-light.svg");
-    }
+  #nav-posts-icon {
+    content: url("https://vimlena.com/img/icons/document-light.svg");
+  }
 
-    #nav-about-icon {
-        content: url("https://vimlena.com/img/icons/user-light.svg");
-    }
+  #nav-about-icon {
+    content: url("https://vimlena.com/img/icons/user-light.svg");
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        --background-01: #fcfcfd;
-        --background-02: #eff1f5;
-        --background-03: #e6e9ef;
-        --text-01: #7c7f93;
-        --text-02: #6c6f85;
-        --text-03: #5c5f77;
-        --text-04: #4c4f69;
-        --red: #d20f39;
-        --orange: #fe640b;
-        --yellow: #df8e1d;
-        --green: #40a02b;
-        --blue-01: #209fb5;
-        --blue-02: #1e66f5;
-        --purple: #8839ef;
-        --brown: #dd7878;
-    }
+  body {
+    --background-01: #fcfcfd;
+    --background-02: #eff1f5;
+    --background-03: #e6e9ef;
+    --text-01: #7c7f93;
+    --text-02: #6c6f85;
+    --text-03: #5c5f77;
+    --text-04: #4c4f69;
+    --red: #d20f39;
+    --orange: #fe640b;
+    --yellow: #df8e1d;
+    --green: #40a02b;
+    --blue-01: #209fb5;
+    --blue-02: #1e66f5;
+    --purple: #8839ef;
+    --brown: #dd7878;
+  }
 
-    #nav-home-icon {
-        content: url("https://vimlena.com/img/icons/home-dark.svg");
-    }
+  #nav-home-icon {
+    content: url("https://vimlena.com/img/icons/home-dark.svg");
+  }
 
-    #nav-posts-icon {
-        content: url("https://vimlena.com/img/icons/document-dark.svg");
-    }
+  #nav-posts-icon {
+    content: url("https://vimlena.com/img/icons/document-dark.svg");
+  }
 
-    #nav-about-icon {
-        content: url("https://vimlena.com/img/icons/user-dark.svg");
-    }
+  #nav-about-icon {
+    content: url("https://vimlena.com/img/icons/user-dark.svg");
+  }
 }
 
 /* ## Basic Formatting */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--background-02);
-    color: var(--text-03);
-    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, Inter,
-        "Helvetica Neue", Roboto, Calibri, "Segoe UI", sans-serif;
-    font-kerning: normal;
-    font-size: 1.1rem;
-    font-variant-ligatures: normal;
-    hyphens: none;
-    line-height: 1.45;
-    margin: 0 auto;
-    max-width: 38rem;
-    padding: 1rem;
-    text-rendering: auto;
-    word-wrap: break-word;
+  background-color: var(--background-02);
+  color: var(--text-03);
+  font-family:
+    "IBM Plex Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    Inter,
+    "Helvetica Neue",
+    Roboto,
+    Calibri,
+    "Segoe UI",
+    sans-serif;
+  font-kerning: normal;
+  font-size: 1.1rem;
+  font-variant-ligatures: normal;
+  hyphens: none;
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 38rem;
+  padding: 1rem;
+  text-rendering: auto;
+  word-wrap: break-word;
 }
 
 @media print {
-    body {
-        background-color: transparent;
-        color: var(--text-02);
-        font-size: 1.1rem;
-    }
+  body {
+    background-color: transparent;
+    color: var(--text-02);
+    font-size: 1.1rem;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3,
-    h4 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+  }
 }
 
 p {
-    margin: 1rem 0rem;
+  margin: 1rem 0rem;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 figure {
-    background-color: var(--background-01);
-    border-radius: 0.625rem;
-    margin: 0rem;
-    padding: 0.5rem;
+  background-color: var(--background-01);
+  border-radius: 0.625rem;
+  margin: 0rem;
+  padding: 0.5rem;
 }
 
 blockquote {
-    border-left: 1px solid var(--text-01);
-    color: var(--text-03);
-    margin: 0.5rem 0rem 0.5rem 1rem;
-    padding-left: 0.5rem;
+  border-left: 1px solid var(--text-01);
+  color: var(--text-03);
+  margin: 0.5rem 0rem 0.5rem 1rem;
+  padding-left: 0.5rem;
 }
 
 hr {
-    color: var(--text-02);
+  color: var(--text-02);
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .column {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
 }
 
 .hanging-indent {
-    margin-left: 1.5rem;
-    text-indent: -1.5rem;
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
 }
 
 .task-list {
-    list-style: none;
+  list-style: none;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ## Headings & Header */
 
 header {
-    margin-bottom: 4rem;
-    text-align: center;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 h1,
@@ -205,118 +213,125 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-04);
-    font-family: "IBM Plex Serif", Palatino, Georgia, Times, serif;
-    font-weight: 600;
-    padding-top: 1rem;
+  color: var(--text-04);
+  font-family: "IBM Plex Serif", Palatino, Georgia, Times, serif;
+  font-weight: 600;
+  padding-top: 1rem;
 }
 
 #website-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h1 {
-    font-size: 1.85rem;
-    text-align: center;
-    margin-block: 0.67em;
+  font-size: 1.85rem;
+  text-align: center;
+  margin-block: 0.67em;
 }
 
 h2 {
-    font-size: 1.65rem;
+  font-size: 1.65rem;
 }
 
 h3 {
-    font-size: 1.45rem;
+  font-size: 1.45rem;
 }
 
 h4 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 h5 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 h6 {
-    font-size: 1.15rem;
+  font-size: 1.15rem;
 }
 
 /* ## Lists */
 
 ol,
 ul {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 ul {
-    list-style-type: "-  ";
+  list-style-type: "-  ";
 }
 
 li > ol,
 li > ul {
-    margin-top: 0rem;
+  margin-top: 0rem;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0rem;
+  list-style: none;
+  padding: 0rem;
 }
 
 nav ul li,
 ul.tags-list li {
-    display: inline;
-    font-size: 1.1rem;
-    padding: 0rem 0.45rem 0rem 0.45rem;
-    text-align: center;
+  display: inline;
+  font-size: 1.1rem;
+  padding: 0rem 0.45rem 0rem 0.45rem;
+  text-align: center;
 }
 #TOC {
-    list-style: circle;
+  list-style: circle;
 }
 
 #TOC ul li {
-    display: block;
-    text-align: left;
+  display: block;
+  text-align: left;
 }
 
 ul#social-links {
-    list-style: none;
-    padding: 0rem;
-    text-align: center;
+  list-style: none;
+  padding: 0rem;
+  text-align: center;
 }
 
 ul#social-links li {
-    display: inline;
-    padding: 0px 0.2rem 0px 0.2rem;
+  display: inline;
+  padding: 0px 0.2rem 0px 0.2rem;
 }
 
 .post-tag {
-    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
-        "Helvetica Neue", Calibri, Roboto, "Segoe UI", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
+  font-family:
+    "IBM Plex Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Calibri,
+    Roboto,
+    "Segoe UI",
+    sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 ul.tags-list {
-    list-style: none;
+  list-style: none;
 }
 
 /* ## Links */
 
 a:link {
-    color: var(--blue-02);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
+  color: var(--blue-02);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 a:visited {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 a:focus,
 a:hover,
 a:active {
-    color: var(--red);
+  color: var(--red);
 }
 
 header a:link,
@@ -325,12 +340,12 @@ header a:visited,
 header a:focus,
 header a:hover,
 header a:active {
-    text-decoration: none;
-    color: var(--text-04);
+  text-decoration: none;
+  color: var(--text-04);
 }
 
 .tags-list li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .back-to-top:link,
@@ -338,15 +353,15 @@ header a:active {
 .back-to-top:focus,
 .back-to-top:hover,
 .back-to-top:active {
-    color: var(--blue-01);
-    text-decoration: none;
+  color: var(--blue-01);
+  text-decoration: none;
 }
 
 /* ## Code & Pre-formatted Text
  *
  * specifically designed to be compatible with the default color scheme pandoc
  * assigns to styling blocks of code
- * 
+ *
  * the following are a list of `code span.${className}` options:
  * `kw` = Keyword
  * `al` = Alert
@@ -378,136 +393,137 @@ header a:active {
  */
 
 code {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 code,
 pre {
-    background-color: var(--background-01);
-    border-radius: 0.4rem;
-    color: var(--text-02);
-    font-family: "IBM Plex Mono", "Inconsolata LGC", "Inconsolata",
-        "SFMono-Regular", Consolas, Menlo, "Liberation Mono", monospace;
-    font-size: 0.75rem;
-    margin: 0;
-    padding: 0.15rem;
+  background-color: var(--background-01);
+  border-radius: 0.4rem;
+  color: var(--text-02);
+  font-family:
+    "IBM Plex Mono", "Inconsolata LGC", "Inconsolata", "SFMono-Regular",
+    Consolas, Menlo, "Liberation Mono", monospace;
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0.15rem;
 }
 
 pre {
-    margin: 1rem 0;
-    overflow: auto;
-    padding: 0.15rem;
+  margin: 1rem 0;
+  overflow: auto;
+  padding: 0.15rem;
 }
 
 pre code {
-    overflow: visible;
-    overflow-wrap: normal;
+  overflow: visible;
+  overflow-wrap: normal;
 }
 
 .sourceCode {
-    background-color: var(--background-01);
-    border-radius: 0.6rem;
-    overflow: visible;
-    padding: 0.15rem;
+  background-color: var(--background-01);
+  border-radius: 0.6rem;
+  overflow: visible;
+  padding: 0.15rem;
 }
 
 pre > code.sourceCode {
-    position: relative;
-    white-space: pre;
+  position: relative;
+  white-space: pre;
 }
 
 pre > code.sourceCode > span {
-    display: inline-block;
-    line-height: 1.5;
+  display: inline-block;
+  line-height: 1.5;
 }
 
 pre > code.sourceCode > span:empty {
-    height: 1.2rem;
+  height: 1.2rem;
 }
 
 code.sourceCode > span {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 div.sourceCode {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 pre.sourceCode {
-    margin: 0rem;
+  margin: 0rem;
 }
 
 @media screen {
-    div.sourceCode {
-        overflow: auto;
-    }
+  div.sourceCode {
+    overflow: auto;
+  }
 }
 
 @media print {
-    pre > code.sourceCode {
-        white-space: pre-wrap;
-    }
+  pre > code.sourceCode {
+    white-space: pre-wrap;
+  }
 
-    pre > code.sourceCode > span {
-        text-indent: -4rem;
-        padding-left: 4rem;
-    }
+  pre > code.sourceCode > span {
+    text-indent: -4rem;
+    padding-left: 4rem;
+  }
 }
 
 pre.numberSource code {
-    counter-reset: source-line 0;
+  counter-reset: source-line 0;
 }
 
 pre.numberSource code > span {
-    counter-increment: source-line;
-    left: -3rem;
-    position: relative;
+  counter-increment: source-line;
+  left: -3rem;
+  position: relative;
 }
 
 pre.numberSource code > span > a:first-child::before {
-    border: none;
-    color: var(--background-01);
-    content: counter(source-line);
-    display: inline-block;
-    left: -1rem;
-    padding: 0 4px;
-    position: relative;
-    text-align: right;
-    user-select: none;
-    vertical-align: baseline;
-    width: 3rem;
+  border: none;
+  color: var(--background-01);
+  content: counter(source-line);
+  display: inline-block;
+  left: -1rem;
+  padding: 0 4px;
+  position: relative;
+  text-align: right;
+  user-select: none;
+  vertical-align: baseline;
+  width: 3rem;
 }
 
 pre.numberSource {
-    border-left: 0.06rem solid var(--background-01);
-    margin-left: 2rem;
-    padding-left: 0.25rem;
+  border-left: 0.06rem solid var(--background-01);
+  margin-left: 2rem;
+  padding-left: 0.25rem;
 }
 
 @media screen {
-    pre > code.sourceCode > span > a:first-child::before {
-        text-decoration: underline;
-    }
+  pre > code.sourceCode > span > a:first-child::before {
+    text-decoration: underline;
+  }
 }
 
 code span.kw {
-    color: var(--text-03);
-    font-weight: bold;
+  color: var(--text-03);
+  font-weight: bold;
 }
 
 code span.al,
 code span.er {
-    color: var(--red);
-    font-weight: bold;
+  color: var(--red);
+  font-weight: bold;
 }
 
 code span.an,
 code span.cv,
 code span.in {
-    color: var(--blue-01);
-    font-weight: bold;
-    font-style: italic;
+  color: var(--blue-01);
+  font-weight: bold;
+  font-style: italic;
 }
 
 code span.at,
@@ -515,93 +531,93 @@ code span.bn,
 code span.dv,
 code span.fl,
 code span.st {
-    color: var(--green);
+  color: var(--green);
 }
 
 code span.ot {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 code span.cf,
 code span.im {
-    color: var(--purple);
-    font-weight: bold;
+  color: var(--purple);
+  font-weight: bold;
 }
 
 code span.ch,
 code span.va {
-    color: var(--blue-02);
+  color: var(--blue-02);
 }
 
 code span.fu {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 code span.cn,
 code span.dt {
-    color: var(--red);
+  color: var(--red);
 }
 
 code span.co {
-    color: var(--text-01);
+  color: var(--text-01);
 }
 
 code span.do {
-    color: var(--red);
-    font-style: italic;
+  color: var(--red);
+  font-style: italic;
 }
 
 code span.op {
-    color: var(--text-02);
+  color: var(--text-02);
 }
 
 code span.pp {
-    color: var(--brown);
+  color: var(--brown);
 }
 
 code span.sc,
 code span.vs {
-    color: var(--blue-01);
+  color: var(--blue-01);
 }
 
 code span.ss,
 code span.bu {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 code span.wa {
-    color: var(--orange);
-    font-weight: bold;
+  color: var(--orange);
+  font-weight: bold;
 }
 
 /* ## Tables */
 
 table {
-    border-collapse: collapse;
-    display: block;
-    font-variant-numeric: lining-nums tabular-nums;
-    margin: 0.8rem 0;
-    overflow-x: auto;
-    width: 100%;
+  border-collapse: collapse;
+  display: block;
+  font-variant-numeric: lining-nums tabular-nums;
+  margin: 0.8rem 0;
+  overflow-x: auto;
+  width: 100%;
 }
 
 table caption {
-    margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 tbody {
-    border-bottom: 0.06rem solid var(--text-01);
-    border-top: 0.06rem solid var(--text-01);
-    margin-top: 0.5rem;
+  border-bottom: 0.06rem solid var(--text-01);
+  border-top: 0.06rem solid var(--text-01);
+  margin-top: 0.5rem;
 }
 
 th {
-    border-top: 0.06rem solid var(--text-01);
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-top: 0.06rem solid var(--text-01);
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
 td {
-    padding: 0.125rem 0.5rem 0.25rem 0.5rem;
+  padding: 0.125rem 0.5rem 0.25rem 0.5rem;
 }
 
 /* ## @font-face imports
@@ -614,69 +630,69 @@ td {
 /* ### IBM Plex Sans */
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ibm-plex-sans-v22-latin-regular.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-sans-v22-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("../fonts/ibm-plex-sans-v22-latin-italic.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-sans-v22-latin-italic.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ibm-plex-sans-v22-latin-700.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-sans-v22-latin-700.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Sans";
-    font-style: italic;
-    font-weight: 700;
-    src: url("../fonts/ibm-plex-sans-v22-latin-700italic.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-sans-v22-latin-700italic.woff2") format("woff2");
 }
 
 /* ### IBM Plex Mono */
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ibm-plex-mono-v19-latin-regular.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-mono-v19-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Mono";
-    font-style: italic;
-    font-weight: 400;
-    src: url("../fonts/ibm-plex-mono-v19-latin-italic.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-mono-v19-latin-italic.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ibm-plex-mono-v19-latin-700.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-mono-v19-latin-700.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "IBM Plex Mono";
-    font-style: italic;
-    font-weight: 700;
-    src: url("../fonts/ibm-plex-mono-v19-latin-700italic.woff2") format("woff2");
+  font-display: swap;
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-mono-v19-latin-700italic.woff2") format("woff2");
 }
 
 /* ### IBM Plex Serif */
