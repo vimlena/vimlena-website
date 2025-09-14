@@ -3,136 +3,136 @@
 /* ## Sample rules */
 
 .open-sans-sample {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
 }
 
 .lato-sample {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 1.2rem;
 }
 
 .inter-sample {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
 }
 
 .monsterrat-sample {
-  font-family: "Monsterrat";
+  font-family: "Monsterrat", sans-serif;
   font-size: 1.2rem;
 }
 
 .linux-libertine-sample {
-  font-family: "Linux Libertine";
+  font-family: "Linux Libertine", serif;
   font-size: 1.2rem;
 }
 
 .crimson-text-sample {
-  font-family: "Crimson Text";
+  font-family: "Crimson Text", serif;
   font-size: 1.2rem;
 }
 
 .lora-sample {
-  font-family: "Lora";
+  font-family: "Lora", serif;
   font-size: 1.2rem;
 }
 
 .inconsolata-lgc-sample {
-  font-family: "Inconsolata LGC";
+  font-family: "Inconsolata LGC", monospace;
   font-size: 1.2rem;
 }
 
 .meslo-lg-m-sample {
-  font-family: "Meslo LG M";
+  font-family: "Meslo LG M", monospace;
   font-size: 1.2rem;
 }
 
 .jetbrains-mono-sample {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains Mono", monospace;
   font-size: 1.2rem;
 }
 
 .jetbrains-mono-ligature-sample {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains Mono", monospace;
 }
 
 .anonymous-pro-sample {
-  font-family: "Anonymous Pro";
+  font-family: "Anonymous Pro", monospace;
   font-size: 1.2rem;
 }
 
 .iosevka-sample {
-  font-family: "Iosevka";
+  font-family: "Iosevka", monospace;
   font-size: 1.2rem;
 }
 
 .source-sans-3-sample {
-  font-family: "Source Sans 3";
+  font-family: "Source Sans 3", sans-serif;
   font-size: 1.2rem;
 }
 
 .source-serif-4-sample {
-  font-family: "Source Serif 4";
+  font-family: "Source Serif 4", serif;
   font-size: 1.2rem;
 }
 
 .source-code-pro-sample {
-  font-family: "Source Code Pro";
+  font-family: "Source Code Pro", monospace;
   font-size: 1.2rem;
 }
 
 .cmu-sans-serif-sample {
-  font-family: "CMU Sans Serif";
+  font-family: "CMU Sans Serif", serif;
   font-size: 1.2rem;
 }
 
 .cmu-serif-sample {
-  font-family: "CMU Serif";
+  font-family: "CMU Serif", serif;
   font-size: 1.2rem;
 }
 
 .cmu-typewriter-text-sample {
-  font-family: "CMU Typewriter Text";
+  font-family: "CMU Typewriter Text", monospace;
   font-size: 1.2rem;
 }
 
 .cmu-bright-sample {
-  font-family: "CMU Bright";
+  font-family: "CMU Bright", sans-serif;
   font-size: 1.2rem;
 }
 
 .cmu-concrete-sample {
-  font-family: "CMU Concrete";
+  font-family: "CMU Concrete", serif;
   font-size: 1.2rem;
 }
 
 .dejavu-sans-sample {
-  font-family: "DejaVu Sans";
+  font-family: "DejaVu Sans", sans-serif;
   font-size: 1.2rem;
 }
 
 .dejavu-serif-sample {
-  font-family: "DejaVu Serif";
+  font-family: "DejaVu Serif", serif;
   font-size: 1.2rem;
 }
 
 .dejavu-sans-mono-sample {
-  font-family: "DejaVu Sans Mono";
+  font-family: "DejaVu Sans Mono", monospace;
   font-size: 1.2rem;
 }
 
 .ibm-plex-sans-sample {
-  font-family: "IBM Plex Sans";
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.2rem;
 }
 
 .ibm-plex-serif-sample {
-  font-family: "IBM Plex Serif";
+  font-family: "IBM Plex Serif", serif;
   font-size: 1.2rem;
 }
 
 .ibm-plex-mono-sample {
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1.2rem;
 }
 
