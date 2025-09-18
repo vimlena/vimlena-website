@@ -9,13 +9,13 @@
  * - `text-0X`: goes from `01` to `04`, incrementing each time it will increase
  *   the contrast with the background colors
  * - stock background and text values are `background-02` and `text-03`
- * - highest possible contrast is `background-01` and `text-04` becase they are
+ * - highest possible contrast is `background-01` and `text-04` because they are
  *.  the farthest away from each other on the number line; `background-03` and
  *.  `text-01` would be the lowest contrast for the same reason
  *
  * ### other color variables
  *
- * - most of the other color variables are self-explanatrory, but `blue-0X`
+ * - most of the other color variables are self-explanatory, but `blue-0X`
  *   goes from `01` to `02` and increments each time it increases the contrast
  *.  with the background
  * - other colors include: `red`, `orange`, `yellow`, `green`, `purple`, and
@@ -108,16 +108,15 @@
 body {
   background-color: var(--background-02);
   color: var(--text-03);
-  font-family:
-    "IBM Plex Sans",
-    -apple-system,
-    BlinkMacSystemFont,
-    Inter,
-    "Helvetica Neue",
-    Roboto,
-    Calibri,
-    "Segoe UI",
-    sans-serif;
+  font-family: "Inter",
+  "SF Pro",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica Neue",
+  Roboto,
+  Calibri,
+  "Segoe UI",
+  sans-serif;
   font-kerning: normal;
   font-size: 1.1rem;
   font-variant-ligatures: normal;
@@ -152,7 +151,8 @@ body {
 }
 
 p {
-  margin: 1rem 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 img {
@@ -162,14 +162,16 @@ img {
 figure {
   background-color: var(--background-01);
   border-radius: 0.625rem;
-  margin: 0rem;
+  margin: 0;
   padding: 0.5rem;
 }
 
 blockquote {
   border-left: 1px solid var(--text-01);
   color: var(--text-03);
-  margin: 0.5rem 0rem 0.5rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
   padding-left: 0.5rem;
 }
 
@@ -214,7 +216,11 @@ h4,
 h5,
 h6 {
   color: var(--text-04);
-  font-family: "IBM Plex Serif", Palatino, Georgia, Times, serif;
+  font-family: "Montserrat",
+  "Source Sans Pro",
+  "IBM Plex Sans",
+  "Helvetica Neue",
+  sans-serif;
   font-weight: 600;
   padding-top: 1rem;
 }
@@ -262,21 +268,23 @@ ul {
 
 li > ol,
 li > ul {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 nav ul {
   list-style: none;
-  padding: 0rem;
+  padding: 0;
 }
 
 nav ul li,
 ul.tags-list li {
   display: inline;
   font-size: 1.1rem;
-  padding: 0rem 0.45rem 0rem 0.45rem;
+  padding-right: 0.45rem;
+  padding-left: 0.45rem;
   text-align: center;
 }
+
 #TOC {
   list-style: circle;
 }
@@ -288,25 +296,26 @@ ul.tags-list li {
 
 ul#social-links {
   list-style: none;
-  padding: 0rem;
+  padding: 0;
   text-align: center;
 }
 
 ul#social-links li {
   display: inline;
-  padding: 0px 0.2rem 0px 0.2rem;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
 }
 
 .post-tag {
-  font-family:
-    "IBM Plex Sans",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    Calibri,
-    Roboto,
-    "Segoe UI",
-    sans-serif;
+  font-family: "Inter",
+  "SF Pro",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica Neue",
+  Roboto,
+  Calibri,
+  "Segoe UI",
+  sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -401,10 +410,18 @@ pre {
   background-color: var(--background-01);
   border-radius: 0.4rem;
   color: var(--text-02);
-  font-family:
-    "IBM Plex Mono", "Inconsolata LGC", "Inconsolata", "SFMono-Regular",
-    Consolas, Menlo, "Liberation Mono", monospace;
-  font-size: 0.75rem;
+  font-family: "IosevkaVimlenaExt",
+    "SFMono-Regular",
+    "CommitMono",
+    "Inconsolata LGC",
+    "Inconsolata",
+    "IBM Plex Mono",
+    Consolas,
+    "Meslo LG M",
+    Menlo,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.8rem;
   margin: 0;
   padding: 0.15rem;
 }
@@ -451,7 +468,7 @@ div.sourceCode {
 }
 
 pre.sourceCode {
-  margin: 0rem;
+  margin: 0;
 }
 
 @media screen {
@@ -627,88 +644,88 @@ td {
  * having issues rendering woff2 for some reason
  */
 
-/* ### IBM Plex Sans */
+/* ### Inter */
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Sans";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ibm-plex-sans-v22-latin-regular.woff2") format("woff2");
+  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Sans";
+  font-family: "Inter";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/ibm-plex-sans-v22-latin-italic.woff2") format("woff2");
+  src: url("../fonts/inter-v20-latin-italic.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Sans";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ibm-plex-sans-v22-latin-700.woff2") format("woff2");
+  src: url("../fonts/inter-v20-latin-700.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Sans";
+  font-family: "Inter";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/ibm-plex-sans-v22-latin-700italic.woff2") format("woff2");
+  src: url("../fonts/inter-v20-latin-700italic.woff2") format("woff2");
 }
 
-/* ### IBM Plex Mono */
+/* ### Iosevka Vim Lena Ext */
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Mono";
+  font-family: "IosevkaVimLenaExt";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ibm-plex-mono-v19-latin-regular.woff2") format("woff2");
+  src: url("../fonts/IosevkaVimLenaExt-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Mono";
+  font-family: "IosevkaVimLenaExt";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/ibm-plex-mono-v19-latin-italic.woff2") format("woff2");
+  src: url("../fonts/IosevkaVimLenaExt-Italic.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Mono";
+  font-family: "IosevkaVimLenaExt";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ibm-plex-mono-v19-latin-700.woff2") format("woff2");
+  src: url("../fonts/IosevkaVimLenaExt-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Mono";
+  font-family: "IosevkaVimLenaExt";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/ibm-plex-mono-v19-latin-700italic.woff2") format("woff2");
+  src: url("../fonts/IosevkaVimLenaExt-BoldItalic.woff2") format("woff2");
 }
 
-/* ### IBM Plex Serif */
+/* ### Montserrat */
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Serif";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/ibm-plex-serif-v19-latin-600.woff2") format("woff2");
+  src: url("../fonts/montserrat-v31-latin-600.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "IBM Plex Serif";
+  font-family: "Montserrat";
   font-style: italic;
   font-weight: 600;
-  src: url("../fonts/ibm-plex-serif-v19-latin-600italic.woff2") format("woff2");
+  src: url("../fonts/montserrat-v31-latin-600italic.woff2") format("woff2");
 }

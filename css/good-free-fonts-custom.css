@@ -17,8 +17,8 @@
   font-size: 1.2rem;
 }
 
-.monsterrat-sample {
-  font-family: "Monsterrat", sans-serif;
+.montserrat-sample {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -162,13 +162,13 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-v19-latin-regular.woff2") format("woff2");
+  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2");
 }
 
-/* monsterrat */
+/* montserrat */
 @font-face {
   font-display: swap;
-  font-family: "Monsterrat";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
