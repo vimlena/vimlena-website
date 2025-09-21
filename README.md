@@ -26,11 +26,8 @@ The actual text of the blog posts on this website are licensed under the
 The typefaces I use on this website are
 
 [Montserrat](https://github.com/JulietaUla/Montserrat) for headings,
-[Inter](https://github.com/rsms/inter) by for headings/body and my own
-customized version of [Iosevka](https://github.com/be5invis/Iosevka) for code.
-[This is a Dropbox link to Iosevka Vim Lena Extended](https://www.dropbox.com/scl/fo/2npjl29dxtxbbmbxzwhia/ABLgwLAyeSHX71l4Ir4uweE?rlkey=gq7v1gsmeowib6tbwym9gj7hv&dl=0)
-and
-[this is a Dropbox link to the standard thin Iosevka Vim Lena](https://www.dropbox.com/scl/fo/aq71k18v7zt3rgqtabnn3/ABtMloU5kMLBrpFSG6R7KYY?rlkey=oyh0bkqblcj5o51p3u6gmujfn&dl=0).
+[Inter](https://github.com/rsms/inter) by for body text and my own customized version of
+[Commit Mono](https://commitmono.com) for code.
 All the typefaces used are distributed under the
 [SIL Open Font License](https://openfontlicense.org/documents/OFL.txt)
 ([summary](https://www.tldrlegal.com/license/open-font-license-ofl-explained))
