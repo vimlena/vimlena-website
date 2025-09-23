@@ -410,7 +410,7 @@ pre {
   background-color: var(--background-01);
   border-radius: 0.4rem;
   color: var(--text-02);
-  font-family: "CommitMonoVimLena",
+  font-family: "CommitMonoVimLenaNL",
     "SFMono-Regular",
     "CommitMono",
     "Inconsolata LGC",
@@ -682,34 +682,34 @@ td {
 
 @font-face {
   font-display: swap;
-  font-family: "CommitMonoVimLena";
+  font-family: "CommitMonoVimLenaNL";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/CommitMonoVimLena-400-Regular.woff2") format("woff2");
+  src: url("../fonts/CommitMonoVimLenaNL-400-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "CommitMonoVimLena";
+  font-family: "CommitMonoVimLenaNL";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/CommitMonoVimLena-400-Italic.woff2") format("woff2");
+  src: url("../fonts/CommitMonoVimLenaNL-400-Italic.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "CommitMonoVimLena";
+  font-family: "CommitMonoVimLenaNL";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/CommitMonoVimLena-700-Regular.woff2") format("woff2");
+  src: url("../fonts/CommitMonoVimLenaNL-700-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "CommitMonoVimLena";
+  font-family: "CommitMonoVimLenaNL";
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/CommitMonoVimLena-700-Italic.woff2") format("woff2");
+  src: url("../fonts/CommitMonoVimLenaNL-700-Italic.woff2") format("woff2");
 }
 
 /* ### Montserrat */
