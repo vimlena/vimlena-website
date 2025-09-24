@@ -24,7 +24,6 @@ The actual text of the blog posts on this website are licensed under the
 ([summary](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)).
 
 The typefaces I use on this website are
-
 [Montserrat](https://github.com/JulietaUla/Montserrat) for headings,
 [Inter](https://github.com/rsms/inter) by for body text and my own customized version of
 [Commit Mono](https://commitmono.com) for code.
