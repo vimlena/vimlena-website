@@ -33,7 +33,7 @@
  * target the correct color scheme to load correctly.
  */
 
-/* ## color schemes defined */
+/* ## Colorschemes defined */
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -109,15 +109,8 @@ body {
     background-color: var(--background-02);
     color: var(--text-03);
     font-family:
-        "Inter",
-        "SF Pro",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Helvetica Neue",
-        Roboto,
-        Calibri,
-        "Segoe UI",
-        sans-serif;
+        "Inter", "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, Calibri,
+        "Segoe UI", sans-serif;
     font-kerning: normal;
     font-size: 1.1rem;
     font-variant-ligatures: normal;
@@ -305,15 +298,8 @@ ul#social-links li {
 
 .post-tag {
     font-family:
-        "Inter",
-        "SF Pro",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Helvetica Neue",
-        Roboto,
-        Calibri,
-        "Segoe UI",
-        sans-serif;
+        "Inter", "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, Calibri,
+        "Segoe UI", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -409,7 +395,7 @@ pre {
     border-radius: 0.4rem;
     color: var(--text-02);
     font-family:
-        "CommitMonoVimLenaNL", "SFMono-Regular", "CommitMono", "Inconsolata LGC", "Inconsolata",
+        "IosevkaVimLenaNL", "SFMono-Regular", "CommitMono", "Inconsolata LGC", "Inconsolata",
         Consolas, "IBM Plex Mono", "Meslo LG M", Menlo, "Liberation Mono", monospace;
     font-size: 0.8rem;
     margin: 0;
@@ -672,34 +658,34 @@ td {
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoVimLenaNL";
+    font-family: "IosevkaVimLenaNL";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/CommitMonoVimLenaNL-400-Regular.woff2") format("woff2");
+    src: url("../fonts/IosevkaVimLenaNl-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoVimLenaNL";
+    font-family: "IosevkaVimLenaNL";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/CommitMonoVimLenaNL-400-Italic.woff2") format("woff2");
+    src: url("../fonts/IosevkaVimLenaNl-Italic.woff2) format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoVimLenaNL";
+    font-family: "IosevkaVimLenaNL";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/CommitMonoVimLenaNL-700-Regular.woff2") format("woff2");
+    src: url("../fonts/IosevkaVimLenaNl-Bold.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoVimLenaNL";
+    font-family: "IosevkaVimLenaNL";
     font-style: italic;
     font-weight: 700;
-    src: url("../fonts/CommitMonoVimLenaNL-700-Italic.woff2") format("woff2");
+    src: url("../fonts/IosevkaVimLenaNl-BoldItalic.woff2") format("woff2");
 }
 
 /* ### Montserrat */
