@@ -109,8 +109,15 @@ body {
     background-color: var(--background-02);
     color: var(--text-03);
     font-family:
-        "Inter", "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, Calibri,
-        "Segoe UI", sans-serif;
+        "Inter",
+        "SF Pro",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Roboto,
+        Calibri,
+        "Segoe UI",
+        sans-serif;
     font-kerning: normal;
     font-size: 1.1rem;
     font-variant-ligatures: normal;
@@ -298,8 +305,15 @@ ul#social-links li {
 
 .post-tag {
     font-family:
-        "Inter", "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, Calibri,
-        "Segoe UI", sans-serif;
+        "Inter",
+        "SF Pro",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Roboto,
+        Calibri,
+        "Segoe UI",
+        sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -395,8 +409,8 @@ pre {
     border-radius: 0.4rem;
     color: var(--text-02);
     font-family:
-        "IosevkaVimLenaNL", "SFMono-Regular", "CommitMono", "Inconsolata LGC", "Inconsolata",
-        Consolas, "IBM Plex Mono", "Meslo LG M", Menlo, "Liberation Mono", monospace;
+        "Meslo LG M DZ", "SFMono-Regular", "CommitMono", "Inconsolata LGC", "Inconsolata", Consolas,
+        "IBM Plex Mono", "Meslo LG M", Menlo, "Liberation Mono", monospace;
     font-size: 0.8rem;
     margin: 0;
     padding: 0.15rem;
@@ -654,38 +668,38 @@ td {
     src: url("../fonts/inter-v20-latin-700italic.woff2") format("woff2");
 }
 
-/* ### Iosevka Vim Lena Ext */
+/* ### Meslo LG M DZ */
 
 @font-face {
     font-display: swap;
-    font-family: "IosevkaVimLenaNL";
+    font-family: "Meslo LG M DZ";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/IosevkaVimLenaNl-Regular.woff2") format("woff2");
+    src: url("../fonts/MesloLGMDZ-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "IosevkaVimLenaNL";
+    font-family: "Meslo LG M DZ";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/IosevkaVimLenaNl-Italic.woff2) format("woff2");
+    src: url("../fonts/MesloLGMDZ-Italic.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "IosevkaVimLenaNL";
+    font-family: "Meslo LG M DZ";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/IosevkaVimLenaNl-Bold.woff2") format("woff2");
+    src: url("../fonts/MesloLGMDZ-Bold.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "IosevkaVimLenaNL";
+    font-family: "Meslo LG M DZ";
     font-style: italic;
     font-weight: 700;
-    src: url("../fonts/IosevkaVimLenaNl-BoldItalic.woff2") format("woff2");
+    src: url("../fonts/MesloLGMDZ-BoldItalic.woff2") format("woff2");
 }
 
 /* ### Montserrat */
