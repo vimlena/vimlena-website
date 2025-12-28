@@ -109,26 +109,25 @@ body {
     background-color: var(--background-02);
     color: var(--text-03);
     font-family:
-        "Source Sans 3",
-        "Source Sans Pro",
+        "Atkinson Hyperlegible Next",
         "Tahoma",
         -apple-system-body,
         -apple-system,
         BlinkMacSystemFont,
         "SF Pro",
-        Calibri,
-        Roboto,
+        "Aptos",
+        "Roboto",
         "Helvetica Neue",
-        Segoe,
+        "Segoe",
         sans-serif;
     font-kerning: normal;
-    font-size: 1.1rem;
+    font-size: 16px;
     font-variant-ligatures: normal;
     hyphens: none;
-    line-height: 1.45;
+    line-height: 1.35;
     margin: 0 auto;
-    max-width: 38rem;
-    padding: 1rem;
+    max-width: 38em;
+    padding: 0.75em;
     text-rendering: auto;
     word-wrap: break-word;
 }
@@ -137,7 +136,7 @@ body {
     body {
         background-color: transparent;
         color: var(--text-02);
-        font-size: 1.1rem;
+        font-size: 1em;
     }
 
     p,
@@ -155,8 +154,8 @@ body {
 }
 
 p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 img {
@@ -165,18 +164,16 @@ img {
 
 figure {
     background-color: var(--background-01);
-    border-radius: 0.625rem;
+    border-radius: 0.625em;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.5em;
 }
 
 blockquote {
-    border-left: 1px solid var(--text-01);
-    color: var(--text-03);
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-    padding-left: 0.5rem;
+    margin: 1em 0 1em 1.7em;
+    padding-left: 1em;
+    border-left: 0.125em solid var(--text-01);
+    color: var(--text-02);
 }
 
 hr {
@@ -194,8 +191,8 @@ address {
 }
 
 .hanging-indent {
-    margin-left: 1.5rem;
-    text-indent: -1.5rem;
+    margin-left: 1.5em;
+    text-indent: -1.5em;
 }
 
 .task-list {
@@ -209,7 +206,7 @@ address {
 /* ## Headings & Header */
 
 header {
-    margin-bottom: 4rem;
+    margin-bottom: 4em;
     text-align: center;
 }
 
@@ -221,61 +218,66 @@ h5,
 h6 {
     color: var(--text-04);
     font-family:
-        "Source Serif 4",
-        "Source Serif Pro",
-        -apple-system-ui-serif,
-        ui-serif,
-        Palatino,
-        "Palatino Linotype",
-        "Palatino LT STD",
-        "Book Antiqua",
-        Garamond,
-        Baskerville,
-        "Baskerville Old Face",
-        "Hoefler Text",
-        Georgia,
-        "Times New Roman",
-        Times,
-        serif;
+        "Inter Display",
+        "Inter",
+        -apple-system-body,
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro",
+        "Aptos",
+        "Roboto",
+        "Helvetica Neue",
+        "Verdana",
+        "Segoe",
+        sans-serif;
     font-weight: 600;
-    padding-top: 1rem;
+    padding-top: 1em;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+    font-size: 0.9em;
+    color: var(--text-03);
 }
 
 #website-title {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 h1 {
-    font-size: 1.85rem;
+    font-size: 1.9em;
     text-align: center;
-    margin-block: 0.67em;
 }
 
 h2 {
-    font-size: 1.65rem;
+    font-size: 1.7em;
 }
 
 h3 {
-    font-size: 1.45rem;
+    font-size: 1.5em;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.3em;
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 1.25em;
 }
 
 h6 {
-    font-size: 1.15rem;
+    font-size: 1.2em;
 }
 
 /* ## Lists */
 
 ol,
 ul {
-    padding-left: 1rem;
+    padding-left: 1em;
 }
 
 ul {
@@ -295,9 +297,9 @@ nav ul {
 nav ul li,
 ul.tags-list li {
     display: inline;
-    font-size: 1.1rem;
-    padding-right: 0.45rem;
-    padding-left: 0.45rem;
+    font-size: 1.1em;
+    padding-right: 0.45em;
+    padding-left: 0.45em;
     text-align: center;
 }
 
@@ -318,25 +320,24 @@ ul#social-links {
 
 ul#social-links li {
     display: inline;
-    padding-right: 0.2rem;
-    padding-left: 0.2rem;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
 }
 
 .post-tag {
     font-family:
-        "Source Sans 3",
-        "Source Sans Pro",
+        "Atkinson Hyperlegible Next",
         "Tahoma",
         -apple-system-body,
         -apple-system,
         BlinkMacSystemFont,
         "SF Pro",
-        Calibri,
-        Roboto,
+        "Aptos",
+        "Roboto",
         "Helvetica Neue",
-        Segoe,
+        "Segoe",
         sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 400;
 }
 
@@ -422,39 +423,38 @@ header a:active {
  */
 
 code {
+    background-color: var(--background-01);
+    font-family: "ConsolenaC", monospace;
+    font-size: 0.9em;
+    line-height: 125%;
+    margin: 0;
+    hyphens: manual;
+    padding: 0.1em;
     white-space: pre-wrap;
 }
 
-code,
 pre {
-    background-color: var(--background-01);
-    border-radius: 0.4rem;
-    color: var(--text-02);
-    font-family:
-        "CommitMonoNL", "CommitMono", "Inconsolata", "Inconsolata LGC", "Consolas",
-        "SFMono-Regular", "IBM Plex Mono", "Meslo LG M", Menlo, "DejaVu Sans Mono,",
-        "Liberation Mono", "Courier New", Courier, monospace;
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0.15rem;
-}
-
-pre {
-    margin: 1rem 0;
+    margin: 1em 0;
     overflow: auto;
-    padding: 0.15rem;
+    padding: 0.5em;
 }
 
 pre code {
+    padding: 0;
     overflow: visible;
     overflow-wrap: normal;
 }
 
 .sourceCode {
     background-color: var(--background-01);
-    border-radius: 0.6rem;
     overflow: visible;
-    padding: 0.15rem;
+}
+
+.sourceCode {
+    background-color: var(--background-01);
+    border-radius: 0.6em;
+    overflow: visible;
+    padding: 0.15em;
 }
 
 pre > code.sourceCode {
@@ -468,7 +468,7 @@ pre > code.sourceCode > span {
 }
 
 pre > code.sourceCode > span:empty {
-    height: 1.2rem;
+    height: 1.2em;
 }
 
 code.sourceCode > span {
@@ -477,7 +477,7 @@ code.sourceCode > span {
 }
 
 div.sourceCode {
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 pre.sourceCode {
@@ -496,8 +496,8 @@ pre.sourceCode {
     }
 
     pre > code.sourceCode > span {
-        text-indent: -4rem;
-        padding-left: 4rem;
+        text-indent: -4em;
+        padding-left: 4em;
     }
 }
 
@@ -507,7 +507,7 @@ pre.numberSource code {
 
 pre.numberSource code > span {
     counter-increment: source-line;
-    left: -3rem;
+    left: -3em;
     position: relative;
 }
 
@@ -516,19 +516,19 @@ pre.numberSource code > span > a:first-child::before {
     color: var(--background-01);
     content: counter(source-line);
     display: inline-block;
-    left: -1rem;
+    left: -1em;
     padding: 0 4px;
     position: relative;
     text-align: right;
     user-select: none;
     vertical-align: baseline;
-    width: 3rem;
+    width: 3em;
 }
 
 pre.numberSource {
-    border-left: 0.06rem solid var(--background-01);
-    margin-left: 2rem;
-    padding-left: 0.25rem;
+    border-left: 0.06em solid var(--background-01);
+    margin-left: 2em;
+    padding-left: 0.25em;
 }
 
 @media screen {
@@ -626,28 +626,28 @@ table {
     border-collapse: collapse;
     display: block;
     font-variant-numeric: lining-nums tabular-nums;
-    margin: 0.8rem 0;
+    margin: 0.8em 0;
     overflow-x: auto;
     width: 100%;
 }
 
 table caption {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.75em;
 }
 
 tbody {
-    border-bottom: 0.06rem solid var(--text-01);
-    border-top: 0.06rem solid var(--text-01);
-    margin-top: 0.5rem;
+    border-bottom: 0.06em solid var(--text-01);
+    border-top: 0.06em solid var(--text-01);
+    margin-top: 0.5em;
 }
 
 th {
-    border-top: 0.06rem solid var(--text-01);
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-top: 0.06em solid var(--text-01);
+    padding: 0.25em 0.5em 0.25em 0.5em;
 }
 
 td {
-    padding: 0.125rem 0.5rem 0.25rem 0.5rem;
+    padding: 0.125em 0.5em 0.25em 0.5em;
 }
 
 /* ## @font-face imports
@@ -657,88 +657,88 @@ td {
  * having issues rendering woff2 for some reason
  */
 
-/* ### Source Sans 3 */
+/* ### Atkinson Hyperlegible Next */
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "Atkinson Hyperlegible Next";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/SourceSans3-Regular.woff2") format("woff2");
+    src: url("../fonts/AtkinsonHyperlegibleNext-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "Atkinson Hyperlegible Next";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/SourceSans3-It.woff2") format("woff2");
+    src: url("../fonts/AtkinsonHyperlegibleNext-RegularItalic.woff2.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "Atkinson Hyperlegible Next";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/SourceSans3-Bold.woff2") format("woff2");
+    src: url("../fonts/AtkinsonHyperlegibleNext-Bold.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Source Sans 3";
+    font-family: "Atkinson Hyperlegible Next";
     font-style: italic;
     font-weight: 700;
-    src: url("../fonts/SourceSans3-BoldIt.woff2") format("woff2");
+    src: url("..fonts/AtkinsonHyperlegibleNext-BoldItalic.woff2") format("woff2");
 }
 
-/* ### CommitMonoNL */
+/* ### ConsolenaC */
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoNL";
+    font-family: "ConsolenaC";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/CommitMonoNL-400-Regular.woff2") format("woff2");
+    src: url("../fonts/ConsolenaC-Condensed.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoNL";
+    font-family: "ConsolenaC";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/CommitMonoNL-400-Italic.woff2") format("woff2");
+    src: url("../fonts/ConsolenaC-CondensedItalic.woff2.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoNL";
+    font-family: "ConsolenaC";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/CommitMonoNL-700-Regular.woff2") format("woff2");
+    src: url("../fonts/ConsolenaC-CondensedBold.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "CommitMonoNL";
+    font-family: "ConsolenaC";
     font-style: italic;
     font-weight: 700;
-    src: url("../fonts/CommitMonoNL-700-Italic.woff2") format("woff2");
+    src: url("../fonts/ConsolenaC-CondensedBoldItalic.woff2") format("woff2");
 }
 
-/* ### Source Serif 4 */
+/* ### Inter Display */
 
 @font-face {
     font-display: swap;
-    font-family: "Source Serif 4";
+    font-family: "Inter Display";
     font-style: normal;
     font-weight: 600;
-    src: url("../fonts/SourceSerif4-Semibold.woff2") format("woff2");
+    src: url("../fonts/InterDisplay-Medium.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Source Serif 4";
+    font-family: "Inter Display";
     font-style: italic;
     font-weight: 600;
-    src: url("../fonts/SourceSerif4-SemiboldIt.woff2") format("woff2");
+    src: url("../fonts/InterDisplay-MediumItalic.woff2") format("woff2");
 }
