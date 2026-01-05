@@ -161,6 +161,11 @@ p {
     margin-bottom: 1em;
 }
 
+p strong,
+p b {
+    font-weight: 600;
+}
+
 img {
     max-width: 100%;
 }
@@ -689,8 +694,8 @@ td {
     -moz-font-feature-settings: "pnum", "ss01";
     -webkit-font-feature-settings: "pnum", "ss01";
     font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/SourceSans3-Bold.woff2") format("woff2");
+    font-weight: 600;
+    src: url("../fonts/SourceSans3-Semibold.woff2") format("woff2");
 }
 
 @font-face {
@@ -700,8 +705,8 @@ td {
     -moz-font-feature-settings: "pnum", "ss01";
     -webkit-font-feature-settings: "pnum", "ss01";
     font-style: italic;
-    font-weight: 700;
-    src: url("..fonts/AtkinsonHyperlegibleNext-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    src: url("..fonts/SourceSans3-SemiboldIt.woff2") format("woff2");
 }
 
 /* ### ConsolenaC */

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="dark light" />
+        <!-- title & properties -->
+        <title>Consolena / Anthophorism</title>
+        <meta property="og:title" content="Consolena / Anthophorism" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://vimlena.com/posts/2026/01/consolena.html" />
+        <meta property="og:description" content="Consolena is out!" />
+        <meta name="description" content="Consolena is out!" />
+        <meta property="og:image" content="https://vimlena.com/img/2026/01/consolena-variant.png" />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../../../img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../../../img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../../../img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../../../img/favicon/site.webmanifest" />
+        <!-- css -->
+        <link href="../../../css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../../../index.html">
+                            <img
+                                id="nav-home-icon"
+                                src="https://vimlena.com/img/icons/home-light.svg"
+                                alt="Home icon"
+                                height="16"
+                                width="16"
+                            />
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../posts.html">
+                            <img
+                                id="nav-posts-icon"
+                                src="https://vimlena.com/img/icons/document-light.svg"
+                                alt="Document icon"
+                                height="16"
+                                width="16"
+                            />
+                            Posts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../about.html">
+                            <img
+                                id="nav-about-icon"
+                                src="https://vimlena.com/img/icons/user-light.svg"
+                                alt="User icon"
+                                height="16"
+                                width="16"
+                            />
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1>Consolena</h1>
+            <address rel="author">Vim Lena</address>
+            <time datetime="2026-01-04">January 4, 2026</time>
+            <h2>Overview/Screenshots</h2>
+            <img
+                src="../../../img/2026/01/consolena-variants.png"
+                alt="A picture of the different variations of Consolena with a pangram sentence and some various punctuation and symbols."
+            />
+            <img
+                src="../../../img/2026/01/consolena-styles.png"
+                alt="A picture of all the Latin characters, a comparison of different weights (from “Thin” to “Heavy”), a comparison of italics, and a pangram of Greek and Russian using Cyrillic characters."
+            />
+            <p>
+                Four days ago, I released
+                <a href="https://github.com/vimlena/consolena/releases/tag/v1.0.0"
+                    >Consolena v 1.0.0</a
+                >. This is something I have been working on slowly for quite a while to get it
+                correct before it’s shipped and I’m happy to properly share it.
+            </p>
+            <p>
+                Consolena is a monospace typeface with a focus on legibility and consistency. They
+                each come in regular-width and condensed-width versions that also come with or
+                without ligatures.
+            </p>
+            <p>
+                Looks best at a slightly larger minimum size than most people seem to typically use;
+                in my tests, about 12.5–13.5 pt depending on the platform/app. Many screens are very
+                high resolution these days so you can still see a lot without straining your eyes.
+                You can make your text slightly larger, I believe in you.
+            </p>
+            <ul>
+                <li>Consolena → Regular width, no ligatures</li>
+                <li>ConsolenaC → Condensed width, no ligatures</li>
+                <li>ConsolenaL → Regular width, includes ligatures</li>
+                <li>ConsolenaLC → Condensed width, includes ligatures</li>
+            </ul>
+            <h2 id="notes">Notes</h2>
+            <p>
+                Consolena is based on
+                <a href="https://github.com/be5invis/Iosevka/">Iosevka 33.3.6</a> by Belleve Invis,
+                specifically the SS04 DejaVu Sans Mono/Meslo stylistic set with term spacing.
+            </p>
+            <p>
+                Consolena was created using the
+                <a href="https://typeof.net/Iosevka/customizer">Iosevka Customizer Tool</a> then
+                tweaking the parameters/build plans file with some minor additional tweaks using the
+                <a href="https://glyphsapp.com">Glyphs app</a> (which I highly recommend for type
+                design).
+            </p>
+            <p>
+                A huge benefit of being based on Iosevka is that Consolena has support for Cyrillic
+                and Greek characters. I do not speak Greek or any language that used these character
+                sets, but the defaults for Iosevka SS04 are very sane so that’s nice.
+            </p>
+            <p>
+                Not everybody likes ligatures, which is why I made versions that do not have as well
+                as versions that include ligatures. For versions that support ligatures, I include
+                most common ligatures except for <code>!=</code> → ≠ because I personally find that
+                to be visually a bit disorienting.
+            </p>
+            <p>
+                My thoughts with regards to the specific letterforms I chose was to create something
+                that I actually wanted to use. It looks nice and all the commonly used characters
+                are distinct but it is still coherently styled. Meslo/ Menlo/ DejaVu Sans Mono are
+                really iconic and well-loved coding typefaces which influenced my decision to use it
+                as inspiration.
+            </p>
+            <p>
+                I wanted the letterforms to look similar in italics and roman versions, but for it
+                to have elegant and distinctive italics. The italic slant is 9° which is slightly
+                less severe than many italics.
+            </p>
+            <p>
+                The zero is not quite slashed or dotted, it’s basically a hybrid between the two. I
+                like the distinctiveness of a dotted zero, but not how it looks. I like the look of
+                a slashed zero, but don’t like how it can be confused with the empty set character
+                (∅) or the slashed zero character (Ø or ø) common in some languages.
+            </p>
+        </article>
+        <footer>
+            <ul class="tags-list">
+                <li><a href="../../../posts.html#design-tag">#design</a></li>
+            </ul>
+            <p class="back-to-top-p">
+                <a href="#" class="back-to-top">↑ Back to top</a>
+            </p>
+        </footer>
+    </body>
+</html>
